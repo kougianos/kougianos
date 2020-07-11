@@ -7,7 +7,32 @@ $(document).ready(function () {
 		// once: true
 	}); // initialize animate on scroll library
 
-	// $(".collapse.shadow-sm show").click();
+	//Scroll to top button
+
+	var btn = $('#buttonScrollTop');
+
+	if ($(window).scrollTop() > 300) {
+		btn.addClass('show');
+	} else {
+		btn.removeClass('show');
+	}
+
+	$(window).scroll(function () {
+		if ($(window).scrollTop() > 300) {
+			btn.addClass('show');
+		} else {
+			btn.removeClass('show');
+		}
+	});
+
+	btn.on('click', function (e) {
+		e.preventDefault();
+		$('html, body').animate({
+			scrollTop: 0
+		}, '300');
+	});
+
+	//Scroll to top button - END
 });
 
 // Smooth scroll for links with hashes

@@ -7283,3 +7283,37 @@ a.credit {
 	letter-spacing: 1px;
 	font-weight: bold;
 }
+
+/* Scroll to top button */
+#buttonScrollTop {
+	display: inline-block;
+	background-color: #a21d1d;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border-radius: 40px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	transition: background-color .3s,
+		opacity .5s, visibility .5s;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1000;
+	padding: 7px;
+}
+
+
+#buttonScrollTop:hover {
+	cursor: pointer;
+	background-color: #d82727;
+}
+
+#buttonScrollTop:active {
+	background-color: #d82727;
+}
+
+#buttonScrollTop.show {
+	opacity: 1;
+	visibility: visible;
+}
