@@ -7,7 +7,7 @@ $(document).ready(function () {
 		// once: true
 	}); // initialize animate on scroll library
 
-	//Scroll to top button
+	// Scroll to top button
 
 	var btn = $('#buttonScrollTop');
 
@@ -32,7 +32,17 @@ $(document).ready(function () {
 		}, '300');
 	});
 
-	//Scroll to top button - END
+	// Progress Bar on Scroll
+	function progressBarScroll() {
+		let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
+			height = document.documentElement.scrollHeight - document.documentElement.clientHeight,
+			scrolled = (winScroll / height) * 100;
+		document.getElementById("progressBar").style.width = scrolled + "%";
+	}
+
+	window.onscroll = function () {
+		progressBarScroll();
+	};
 });
 
 // Smooth scroll for links with hashes
@@ -40,20 +50,19 @@ $("a.smooth-scroll").click(function (event) {
 	// On-page links
 	if (
 		location.pathname.replace(/^\//, "") ==
-			this.pathname.replace(/^\//, "") &&
+		this.pathname.replace(/^\//, "") &&
 		location.hostname == this.hostname
 	) {
 		// Figure out element to scroll to
 		var target = $(this.hash);
-		target = target.length
-			? target
-			: $("[name=" + this.hash.slice(1) + "]");
+		target = target.length ?
+			target :
+			$("[name=" + this.hash.slice(1) + "]");
 		// Does a scroll target exist?
 		if (target.length) {
 			// Only prevent default if animation is actually gonna happen
 			event.preventDefault();
-			$("html, body").animate(
-				{
+			$("html, body").animate({
 					scrollTop: target.offset().top,
 				},
 				1000,
