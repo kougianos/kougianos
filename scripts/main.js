@@ -43,6 +43,13 @@ $(document).ready(function () {
 	window.onscroll = function () {
 		progressBarScroll();
 	};
+
+	// View CV button only if ?viewCv param is present
+	if (window.location.search == "?viewCv") {
+		var btnViewCv = $('#viewCv');
+		btnViewCv.removeClass('d-none');
+	} 
+
 });
 
 // Smooth scroll for links with hashes
@@ -63,8 +70,8 @@ $("a.smooth-scroll").click(function (event) {
 			// Only prevent default if animation is actually gonna happen
 			event.preventDefault();
 			$("html, body").animate({
-					scrollTop: target.offset().top,
-				},
+				scrollTop: target.offset().top,
+			},
 				1000,
 				function () {
 					// Callback after animation
