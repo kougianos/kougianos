@@ -7915,7 +7915,9 @@ a.credit {
 }
 
 .light-gray-bg {
-	background-color: #e6e6e6;
+	background-color: none;
+	border: 2px solid #A21D1D;
+	border-radius: 15px;
 	color: black;
 }
 
