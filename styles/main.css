@@ -7913,3 +7913,13 @@ a.credit {
 	height: 10px;
 	width: 0%;
 }
+
+.light-gray-bg {
+	background-color: #e6e6e6;
+	color: black;
+}
+
+.light-gray-bg:hover, .light-gray-bg:focus {
+	text-decoration: none;
+	color:black;
+}
