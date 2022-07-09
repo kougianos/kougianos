@@ -7914,14 +7914,10 @@ a.credit {
 	width: 0%;
 }
 
-.light-gray-bg {
-	background-color: none;
-	border: 2px solid #A21D1D;
-	border-radius: 15px;
-	color: black;
+.projects {
+	color: #2c2c2c;
 }
-
-.light-gray-bg:hover, .light-gray-bg:focus {
+.projects:hover, .projects:focus {
 	text-decoration: none;
 	color:black;
 }
