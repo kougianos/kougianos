@@ -7940,6 +7940,7 @@ figure.cc-effect {
 	height: 100%;
 }
 
+/* EDUCATION */
 .vl {
 	border-left: 6px double #9c1c1c85;
     height: 100%;
@@ -7954,4 +7955,33 @@ figure.cc-effect {
 .cc-education p {
 	border-bottom: 1px solid gray;
 	padding-bottom: 0.5rem;
+}
+
+.h5 small {
+	font-size: 70%;
+}
+
+/* MEDIA QUERY FOR SMARTPHONE */
+@media (max-width: 576px) {
+	.cc-certifications img {
+		display: none;
+	}
+
+	.h5.justify-content-between {
+		font-size: 1.17em;
+	}
+
+	.cc-experience .h5.justify-content-between {
+		display: block !important;
+	}
+
+	.cc-experience img {
+		height: 90px;
+		width: unset;
+	}
+
+	.atos-img {
+		padding: 1.5em;
+	}
+
 }
