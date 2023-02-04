@@ -5,31 +5,34 @@
 $(document).ready(function () {
 	AOS.init({
 		// uncomment below for on-scroll animations to played only once
-		once: true
+		once: true,
 	}); // initialize animate on scroll library
 
 	// Scroll to top button
-	var btn = $('#buttonScrollTop');
+	var btn = $("#buttonScrollTop");
 
 	if ($(window).scrollTop() > 300) {
-		btn.addClass('show');
+		btn.addClass("show");
 	} else {
-		btn.removeClass('show');
+		btn.removeClass("show");
 	}
 
 	$(window).scroll(function () {
 		if ($(window).scrollTop() > 300) {
-			btn.addClass('show');
+			btn.addClass("show");
 		} else {
-			btn.removeClass('show');
+			btn.removeClass("show");
 		}
 	});
 
-	btn.on('click', function (e) {
+	btn.on("click", function (e) {
 		e.preventDefault();
-		$('html, body').animate({
-			scrollTop: 0
-		}, '300');
+		$("html, body").animate(
+			{
+				scrollTop: 0,
+			},
+			"300"
+		);
 	});
 
 	// Progress Bar on Scroll
@@ -46,32 +49,38 @@ $(document).ready(function () {
 
 	// View CV button only if ?viewCv param is present
 	if (window.location.search == "?viewCv") {
-		var btnViewCv = $('#viewCv');
-		btnViewCv.removeClass('d-none');
-	} 
+		var btnViewCv = $("#viewCv");
+		btnViewCv.removeClass("d-none");
+	}
 
+	// Hide navbar on mobile view, every time an option is clicked
+	const liElements = document.querySelectorAll(".nav-link.smooth-scroll");
+	const button = document.querySelector("#navbarTogglerButton");
+	liElements.forEach((li) => {
+		li.addEventListener("click", () => {
+			button.click();
+		});
+	});
 });
 
 // Smooth scroll for links with hashes
 $("a.smooth-scroll").click(function (event) {
 	// On-page links
 	if (
-		location.pathname.replace(/^\//, "") ==
-		this.pathname.replace(/^\//, "") &&
+		location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") &&
 		location.hostname == this.hostname
 	) {
 		// Figure out element to scroll to
 		var target = $(this.hash);
-		target = target.length ?
-			target :
-			$("[name=" + this.hash.slice(1) + "]");
+		target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
 		// Does a scroll target exist?
 		if (target.length) {
 			// Only prevent default if animation is actually gonna happen
 			event.preventDefault();
-			$("html, body").animate({
-				scrollTop: target.offset().top,
-			},
+			$("html, body").animate(
+				{
+					scrollTop: target.offset().top,
+				},
 				1000,
 				function () {
 					// Callback after animation
