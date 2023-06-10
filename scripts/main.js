@@ -1,8 +1,9 @@
 // @ts-nocheck
-// Add your javascript here
-// Don't forget to add it into respective layouts where this js file is needed
-
 $(document).ready(function () {
+
+	// Dynamically calculate years of professional experience
+	document.getElementById('yearsExperience').textContent = `${Math.ceil(new Date().getFullYear() - 2018)} years`
+
 	AOS.init({
 		// uncomment below for on-scroll animations to played only once
 		once: true,
