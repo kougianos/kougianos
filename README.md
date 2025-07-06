@@ -29,7 +29,7 @@
 ### 🧰 Tech Stack I've worked with
 
 **Languages:** Java 11–21, Python, PHP  
-**Backend:** Spring Boot, Spring WebFlux, Apache Kafka, REST, GraphQL, Hazelcast
+**Backend:** Spring Boot, Spring WebFlux, Apache Kafka, REST, GraphQL, Hazelcast  
 **Frontend:** Angular, Bootstrap, jQuery  
 **Cloud & DevOps:** GCP, Microsoft Azure, Docker, Kubernetes, Jenkins  
 **Databases:** MongoDB, Redis, PostgreSQL, Cassandra
