@@ -3,7 +3,7 @@
 **I like Java, Spring boot, microservices & the iGaming industry**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/kougianos)
-[![Website](https://img.shields.io/badge/Website-white?style=flat&logo=google-chrome)](http://kougianos.me/)
+[![Website](https://img.shields.io/badge/Website-white?style=flat&logo=google-chrome)](https://grizzledwizard.eu/)
 
 ---
 
@@ -29,7 +29,7 @@
 ### 🧰 Tech Stack I've worked with
 
 **Languages:** Java 11–21, Python, PHP  
-**Backend:** Spring Boot, Spring WebFlux, Apache Kafka, REST, GraphQL, Hazelcast
+**Backend:** Spring Boot, Spring WebFlux, Apache Kafka, REST, GraphQL, Hazelcast  
 **Frontend:** Angular, Bootstrap, jQuery  
 **Cloud & DevOps:** GCP, Microsoft Azure, Docker, Kubernetes, Jenkins  
 **Databases:** MongoDB, Redis, PostgreSQL, Cassandra
