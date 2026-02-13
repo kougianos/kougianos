@@ -3,7 +3,7 @@
 **I like Java, Spring boot, microservices & the iGaming industry**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/kougianos)
-[![Website](https://img.shields.io/badge/Website-white?style=flat&logo=google-chrome)](https://grizzledwizard.eu/)
+[![Website](https://img.shields.io/badge/Website-white?style=flat&logo=google-chrome)](https://kougianos.com)
 
 ---
 
