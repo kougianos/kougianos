@@ -32,7 +32,7 @@
 **Backend:** Spring Boot, Spring WebFlux, Apache Kafka, REST, GraphQL, Hazelcast  
 **Frontend:** Angular, Bootstrap, jQuery  
 **Cloud & DevOps:** GCP, Microsoft Azure, Docker, Kubernetes, Jenkins  
-**Databases:** MongoDB, Redis, PostgreSQL, Cassandra
+**Databases:** MongoDB, Redis, PostgreSQL, Cassandra  
 **Testing:** JUnit, Mockito, RestAssured, Karate, Testcontainers, Spring integration testing
 
 ---
