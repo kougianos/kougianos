@@ -7414,12 +7414,15 @@ Created using IcoMoon - icomoon.io
 	position: relative;
 	overflow: hidden;
 	text-align: center;
+	width: 100%;
 }
 
 .gallery .cc-porfolio-image figure img {
 	position: relative;
 	display: block;
-	max-width: 100%;
+	width: 100%;
+	height: auto;
+	max-height: 220px;
 	opacity: 1;
 }
 
