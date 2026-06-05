@@ -119,7 +119,10 @@ $(document).ready(function () {
 	const button = document.querySelector("#navbarTogglerButton");
 	liElements.forEach((li) => {
 		li.addEventListener("click", () => {
-			button.click();
+			// Only close the navbar on mobile/tablet devices (below lg breakpoint)
+			if (window.innerWidth < 992) {
+				button.click();
+			}
 		});
 	});
 });
