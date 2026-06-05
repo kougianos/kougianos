@@ -7799,7 +7799,7 @@ a.credit {
 	--site-nav-text: #ffffff;
 	--site-nav-hover: rgba(73, 218, 255, 0.18);
 	--site-footer-bg: #f2f2f2;
-	--site-progress-bg: rgba(150, 150, 150, 0.6);
+	--site-progress-bg: #e8e8e8;
 	--site-progress-bar: #dcc7c4;
 	--site-scroll-top-bg: #a21d1d;
 	--site-scroll-top-bg-hover: #d82727;
@@ -7830,7 +7830,7 @@ body.dark-mode {
 	--site-nav-text: #eaf2ff;
 	--site-nav-hover: rgba(255, 255, 255, 0.12);
 	--site-footer-bg: #101827;
-	--site-progress-bg: rgba(98, 117, 147, 0.45);
+	--site-progress-bg: #2a2a2a;
 	--site-progress-bar: #4fb2ff;
 	--site-scroll-top-bg: #b62f2f;
 	--site-scroll-top-bg-hover: #d84a4a;
@@ -8273,19 +8273,24 @@ body:not(.dark-mode) .profile-page .page-header a.text-info {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 1040;
+	z-index: 1050;
+	height: 10px;
 }
 
 .progress-container {
-	background-color: rgba(150, 150, 150, 0.6);
+	background-color: var(--site-progress-bg);
 	height: 10px;
 	width: 100%;
 }
 
 .progress-bar-scroll {
-	background-color: #dcc7c4;
+	background-color: var(--site-progress-bar);
 	height: 10px;
 	width: 0%;
+}
+
+.fixed-top {
+	top: 10px !important;
 }
 
 .projects {
