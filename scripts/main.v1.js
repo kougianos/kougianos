@@ -58,6 +58,9 @@ $(document).ready(function () {
 
 	initializeThemeToggle();
 
+	// Footer year
+	document.getElementById("currentYear").textContent = new Date().getFullYear().toString();
+
 	// Dynamically calculate years of professional experience
 	document.getElementById('yearsExperience').textContent = `${Math.ceil(new Date().getFullYear() - 2018)} years`
 
