@@ -1,5 +1,62 @@
 // @ts-nocheck
 $(document).ready(function () {
+	const THEME_STORAGE_KEY = "preferred-theme";
+	const themeToggleButtons = document.querySelectorAll(".theme-toggle-btn");
+
+	function updateThemeButtons(theme) {
+		themeToggleButtons.forEach((button) => {
+			const isDark = theme === "dark";
+			button.setAttribute("aria-pressed", isDark.toString());
+			button.setAttribute("aria-label", isDark ? "Activate light mode" : "Activate dark mode");
+			button.setAttribute("title", isDark ? "Activate light mode" : "Activate dark mode");
+		});
+	}
+
+	function applyTheme(theme) {
+		document.body.classList.toggle("dark-mode", theme === "dark");
+		updateThemeButtons(theme);
+	}
+
+	function getPreferredTheme() {
+		const storedTheme = localStorage.getItem(THEME_STORAGE_KEY);
+		if (storedTheme === "light" || storedTheme === "dark") {
+			return storedTheme;
+		}
+
+		return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+	}
+
+	function initializeThemeToggle() {
+		if (!themeToggleButtons.length) {
+			return;
+		}
+
+		applyTheme(getPreferredTheme());
+
+		themeToggleButtons.forEach((button) => {
+			button.addEventListener("click", () => {
+				const nextTheme = document.body.classList.contains("dark-mode") ? "light" : "dark";
+				localStorage.setItem(THEME_STORAGE_KEY, nextTheme);
+				applyTheme(nextTheme);
+			});
+		});
+
+		const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+		const onSystemThemeChanged = (event) => {
+			if (localStorage.getItem(THEME_STORAGE_KEY)) {
+				return;
+			}
+			applyTheme(event.matches ? "dark" : "light");
+		};
+
+		if (typeof mediaQuery.addEventListener === "function") {
+			mediaQuery.addEventListener("change", onSystemThemeChanged);
+		} else if (typeof mediaQuery.addListener === "function") {
+			mediaQuery.addListener(onSystemThemeChanged);
+		}
+	}
+
+	initializeThemeToggle();
 
 	// Dynamically calculate years of professional experience
 	document.getElementById('yearsExperience').textContent = `${Math.ceil(new Date().getFullYear() - 2018)} years`

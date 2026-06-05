@@ -34,6 +34,13 @@
 			<nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="200">
 				<div class="container">
 					<div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip">Grizzled Wizard</a>
+						<button id="themeToggleMobile" class="theme-toggle-btn d-lg-none" type="button"
+							aria-label="Activate dark mode" aria-pressed="false" title="Activate dark mode">
+							<span class="theme-toggle-icon" aria-hidden="true">
+								<i class="fa fa-moon-o theme-icon-moon"></i>
+								<i class="fa fa-sun-o theme-icon-sun"></i>
+							</span>
+						</button>
 						<button id="navbarTogglerButton" class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse"
 							data-target="#navigation" aria-controls="navigation" aria-expanded="false"
 							aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span
@@ -50,6 +57,15 @@
 							<li class="nav-item"><a class="nav-link smooth-scroll" href="#education">Education</a></li>
 							<li class="nav-item"><a class="nav-link smooth-scroll"
 									href="#certifications">Certifications</a></li>
+							<li class="nav-item theme-toggle-nav-item d-none d-lg-flex align-items-center">
+								<button id="themeToggleDesktop" class="theme-toggle-btn" type="button"
+									aria-label="Activate dark mode" aria-pressed="false" title="Activate dark mode">
+									<span class="theme-toggle-icon" aria-hidden="true">
+										<i class="fa fa-moon-o theme-icon-moon"></i>
+										<i class="fa fa-sun-o theme-icon-sun"></i>
+									</span>
+								</button>
+							</li>
 						</ul>
 					</div>
 				</div>
