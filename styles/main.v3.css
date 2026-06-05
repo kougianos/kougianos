@@ -8278,7 +8278,7 @@ body:not(.dark-mode) .profile-page .page-header a.text-info {
 }
 
 .progress-container {
-	background-color: var(--site-progress-bg);
+	background-color: var(--site-nav-bg);
 	height: 10px;
 	width: 100%;
 }
