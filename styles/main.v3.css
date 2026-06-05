@@ -4884,6 +4884,10 @@ Created using IcoMoon - icomoon.io
 	font-size: 2em;
 }
 
+.first-card {
+	margin-top: 40px;
+}
+
 .card {
     border: 0;
     border-radius: 1rem;
@@ -5878,13 +5882,13 @@ Created using IcoMoon - icomoon.io
 		position: fixed;
 		display: block;
 		top: 0;
-		height: 100% !important;
+		height: 100vh !important;
 		width: 300px;
 		right: 0;
 		z-index: 1032;
 		visibility: visible;
-		background-color: #999;
-		overflow-y: visible;
+		background-color: var(--site-nav-bg);
+		overflow-y: auto;
 		border-top: none;
 		text-align: left;
 		max-height: none !important;
@@ -5895,16 +5899,7 @@ Created using IcoMoon - icomoon.io
 	}
 
 	.sidebar-collapse .navbar-collapse:before {
-		background: #378C3F;
-		/* For browsers that do not support gradients */
-		/* For Safari 5.1 to 6.0 */
-		/* For Opera 11.1 to 12.0 */
-		/* For Firefox 3.6 to 15 */
-		background: -webkit-gradient(linear, left top, left bottom, from(#d82727), color-stop(80%, #000));
-		background: linear-gradient(#d82727 0%, #000 80%);
-		/* Standard syntax (must be last) */
-		opacity: 0.76;
-		filter: alpha(opacity=76);
+		background: var(--site-nav-bg);
 		display: block;
 		content: "";
 		position: absolute;
@@ -5921,11 +5916,11 @@ Created using IcoMoon - icomoon.io
 	}
 
 	.sidebar-collapse .navbar-collapse .navbar-nav:not(.navbar-logo) .nav-link:not(.btn) {
-		color: #FFFFFF;
+		color: var(--site-nav-text);
 	}
 
 	.sidebar-collapse .navbar-collapse .dropdown-menu .dropdown-item {
-		color: #FFFFFF;
+		color: var(--site-nav-text);
 	}
 
 	.sidebar-collapse .navbar .navbar-nav {
@@ -5977,7 +5972,7 @@ Created using IcoMoon - icomoon.io
 
 	.sidebar-collapse .navbar .dropdown-menu .dropdown-item:focus,
 	.sidebar-collapse .navbar .dropdown-menu .dropdown-item:hover {
-		color: #FFFFFF;
+		color: var(--site-nav-text);
 	}
 
 	.sidebar-collapse .navbar .navbar-translate {
@@ -6004,7 +5999,7 @@ Created using IcoMoon - icomoon.io
 		width: 22px;
 		height: 1px;
 		border-radius: 1px;
-		background: #FFFFFF;
+		background: var(--site-nav-text);
 	}
 
 	.sidebar-collapse .navbar .navbar-toggler-bar+.navbar-toggler-bar {
@@ -6018,7 +6013,7 @@ Created using IcoMoon - icomoon.io
 	}
 
 	.sidebar-collapse .navbar.bg-white:not(.navbar-transparent) .navbar-toggler-bar {
-		background: #888;
+		background: var(--site-nav-text);
 	}
 
 	.sidebar-collapse .navbar .toggled .navbar-toggler-bar {
