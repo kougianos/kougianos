@@ -3139,7 +3139,6 @@ h6,
 }
 
 p {
-	font-size: clamp(0.99rem, 0.22vw + 0.92rem, 1.06rem);
 	line-height: var(--site-line-height-base);
 }
 
@@ -5176,7 +5175,7 @@ Created using IcoMoon - icomoon.io
 
 .profile-page .title {
 	text-align: center;
-	margin-top: 30px;
+	/* margin-top: 30px; */
 }
 
 .profile-page .description,
