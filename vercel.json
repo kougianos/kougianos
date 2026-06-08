@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/cv",
+      "destination": "/pdf/NikosKougianosCV.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/cv/",
+      "destination": "/pdf/NikosKougianosCV.pdf",
+      "permanent": true
+    }
+  ]
+}

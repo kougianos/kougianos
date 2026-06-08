@@ -108,12 +108,6 @@ $(document).ready(function () {
 		progressBarScroll();
 	};
 
-	// View CV button only if ?viewCv param is present
-	if (window.location.search == "?viewCv") {
-		var btnViewCv = $("#viewCv");
-		btnViewCv.removeClass("d-none");
-	}
-
 	// Hide navbar on mobile view, every time an option is clicked
 	const liElements = document.querySelectorAll(".nav-link.smooth-scroll");
 	const button = document.querySelector("#navbarTogglerButton");
