@@ -44,3 +44,11 @@
 - **🎮 Carly** – Kafka-based microservice communication with RBAC  
 - **📊 Decision Maker** – ML-driven tool for advanced analytics
 
+---
+
+### 🌐 Website UI Notes
+
+- Updated website typography to a modern readability-first stack inspired by Revolut and Aptos:
+	`Manrope`, `Aptos`, `Aptos Display`, `Segoe UI Variable Text`, `Segoe UI`, `Inter`, `Helvetica Neue`, `Arial`, `sans-serif`.
+- Refined typography rhythm with responsive heading scale (`clamp`), improved paragraph readability, and higher legibility for navigation/button text.
+
