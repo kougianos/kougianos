@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Nikos
+# Hey there, I'm Nikos
 
 **I like Java, Spring boot, microservices & the iGaming industry**
 
@@ -10,9 +10,9 @@
 ### Short intro
 
 🎓 **M.Sc. in Data Science** & **B.Sc. in Computer Science**  
-💻 Over **7 years of experience** in software development  
+💻 Over **8 years of experience** in software development  
 🎰 Specialized in **iGaming**, **event-driven systems**, and **microservices**  
-☁️ Hands on experience in **Spring Boot, Apache Kafka, WebFlux, MongoDB, Redis, GCP, Kubernetes**
+☁️ Hands on experience in **Spring Boot, Apache Kafka, WebFlux, MongoDB, Redis, Kubernetes**
 
 ---
 
@@ -39,21 +39,7 @@
 
 ### 🚀 Personal Projects
 
-- **📱 Phonevice** – Smartphone recommender platform  
-- **🧩 REST Aggregator** – Aggregates API responses with throttling & batching  
-- **🎮 Carly** – Kafka-based microservice communication with RBAC  
-- **📊 Decision Maker** – ML-driven tool for advanced analytics
-
----
-
-### Frontend Cleanup (v4)
-
-- New flattened HTML page: `index2.html`
-- New minimal stylesheet: `styles/main.v4.css`
-- Kept the same UI structure and behavior (smooth scroll, sticky navbar, dark/light mode, scroll progress, scroll-to-top)
-- Kept responsive behavior (mobile burger menu, education section stacking on small screens)
-
-Use `index2.html` as the cleaned refactor entrypoint while preserving the original `index.html` + `styles/main.v3.css` pair for comparison.
-
-
-
+- **Phonevice** – Smartphone recommender platform  
+- **REST Aggregator** – Aggregates API responses with throttling & batching  
+- **Carly** – Kafka-based microservice communication with RBAC  
+- **Decision Maker** – ML-driven tool for advanced analytics

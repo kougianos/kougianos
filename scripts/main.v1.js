@@ -104,9 +104,48 @@ $(document).ready(function () {
 		document.getElementById("progressBar").style.width = scrolled + "%";
 	}
 
-	window.onscroll = function () {
-		progressBarScroll();
-	};
+	function initializeActiveSectionHighlight() {
+		const navLinks = Array.from(document.querySelectorAll(".nav-link.smooth-scroll"));
+		const sections = navLinks
+			.map((link) => {
+				const hash = link.getAttribute("href");
+				if (!hash || !hash.startsWith("#")) {
+					return null;
+				}
+				const target = document.querySelector(hash);
+				if (!target) {
+					return null;
+				}
+				return { link, target };
+			})
+			.filter(Boolean);
+
+		if (!sections.length) {
+			return;
+		}
+
+		const setActiveSection = () => {
+			const scrollPosition = window.scrollY + 130;
+			let active = sections[0];
+
+			sections.forEach((item) => {
+				if (item.target.offsetTop <= scrollPosition) {
+					active = item;
+				}
+			});
+
+			navLinks.forEach((link) => link.classList.remove("active-section"));
+			active.link.classList.add("active-section");
+		};
+
+		window.addEventListener("scroll", setActiveSection);
+		window.addEventListener("resize", setActiveSection);
+		setActiveSection();
+	}
+
+	window.addEventListener("scroll", progressBarScroll);
+	progressBarScroll();
+	initializeActiveSectionHighlight();
 
 	// Hide navbar on mobile view, every time an option is clicked
 	const liElements = document.querySelectorAll(".nav-link.smooth-scroll");

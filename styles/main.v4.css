@@ -10,7 +10,7 @@
   --site-border: #d3dae5;
   --site-nav-bg: rgba(28, 42, 79, 0.96);
   --site-nav-text: #ffffff;
-  --site-nav-hover: rgba(73, 218, 255, 0.18);
+  --site-nav-link-active: #8fdfff;
   --site-footer-bg: #f2f2f2;
   --site-progress-bg: rgba(28, 42, 79, 0.96);
   --site-progress-bar: #dcc7c4;
@@ -41,7 +41,7 @@ body.dark-mode {
   --site-border: #2f4058;
   --site-nav-bg: rgba(11, 17, 26, 0.94);
   --site-nav-text: #eaf2ff;
-  --site-nav-hover: rgba(255, 255, 255, 0.12);
+  --site-nav-link-active: #8bd2ff;
   --site-footer-bg: #101827;
   --site-progress-bg: #2a2a2a;
   --site-progress-bar: #4fb2ff;
@@ -103,7 +103,7 @@ body.dark-mode .card {
 
 .navbar {
   top: 10px !important;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 1px;
   background-color: var(--site-nav-bg) !important;
   backdrop-filter: blur(8px);
@@ -113,11 +113,18 @@ body.dark-mode .card {
 .navbar-brand,
 .navbar .nav-link {
   color: var(--site-nav-text) !important;
+  font-weight: 600;
+  transition: color 0.25s ease;
 }
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-  background-color: var(--site-nav-hover);
+  color: var(--site-nav-link-active) !important;
+  background-color: transparent;
+}
+
+.navbar .nav-link.active-section {
+  color: var(--site-nav-link-active) !important;
 }
 
 .navbar-toggler {
@@ -213,7 +220,9 @@ body.dark-mode .theme-toggle-icon .theme-icon-sun {
 
 .profile-page .page-header {
   position: relative;
-  min-height: 90vh;
+  min-height: auto !important;
+  padding-top: 86px;
+  padding-bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -273,7 +282,8 @@ body.dark-mode .theme-toggle-icon .theme-icon-sun {
 .hero-content {
   position: relative;
   z-index: 2;
-  min-height: 88vh;
+  min-height: auto;
+  padding-bottom: 0;
 }
 
 body:not(.dark-mode) .profile-page .page-header,
@@ -293,11 +303,6 @@ body:not(.dark-mode) .profile-page .page-header a.text-info {
   height: 180px;
   width: 180px;
   border: 15px solid transparent;
-  transition: transform 0.3s ease-out;
-}
-
-.cc-profile-image a:hover img {
-  transform: scale(1.06);
 }
 
 .button-container .btn {
@@ -510,8 +515,8 @@ body.dark-mode a.text-dark {
     transform: perspective(700px) rotateX(15deg) scale(1.04);
   }
 
-  .hero-content {
-    min-height: 80vh;
+  .profile-page .page-header {
+    padding-top: 88px;
   }
 
   .h5.justify-content-between {
