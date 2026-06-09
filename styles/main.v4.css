@@ -349,6 +349,12 @@ body:not(.dark-mode) .profile-page .page-header a.text-info {
   color: #fff;
 }
 
+.btn-linkedin .fa,
+.btn-github .fa {
+  font-size: x-large;
+  line-height: 1;
+}
+
 .gallery .cc-porfolio-image figure {
   margin: 0;
   position: relative;
