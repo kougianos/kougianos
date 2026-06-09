@@ -65,8 +65,8 @@ $(document).ready(function () {
 	document.getElementById('yearsExperience').textContent = `${Math.ceil(new Date().getFullYear() - 2018)} years`
 
 	AOS.init({
-		// uncomment below for on-scroll animations to played only once
 		once: true,
+		disable: window.matchMedia("(max-width: 991.98px)").matches,
 	}); // initialize animate on scroll library
 
 	// Scroll to top button

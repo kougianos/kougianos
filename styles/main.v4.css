@@ -60,18 +60,17 @@ body.dark-mode {
   --hero-overlay-end: rgba(4, 9, 18, 0.4);
 }
 
-html,
+html {
+  overflow-x: clip;
+}
+
 body {
   font-family: "Manrope", sans-serif;
   max-width: 100%;
   background-color: var(--site-page-bg);
   color: var(--site-text);
-  overflow-x: hidden;
+  overflow-x: clip;
   transition: background-color 0.35s ease, color 0.35s ease;
-}
-
-main {
-  overflow-x: hidden;
 }
 
 main,
@@ -516,6 +515,11 @@ body.dark-mode a.text-dark {
 }
 
 @media (max-width: 768px) {
+  [data-aos] {
+    transform: none !important;
+    transition: none !important;
+  }
+
   .profile-page .page-header .page-header-image:after {
     opacity: 0.35;
     transform: perspective(700px) rotateX(15deg) scale(1.04);
