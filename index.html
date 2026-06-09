@@ -1,755 +1,536 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
-	<title>Nikos Kougianos</title>
-	<meta name="description" content="Nikos Kougianos personal website" />
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-	<link href="css/aos.css" rel="stylesheet">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="styles/main.v3.css" rel="stylesheet">
+  <title>Nikos Kougianos</title>
+  <meta name="description" content="Nikos Kougianos personal website" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/aos.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles/main.v4.css" rel="stylesheet">
 
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173228273-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-173228273-1');
-	</script>
-
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173228273-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-173228273-1');
+  </script>
 </head>
-
 <body id="top">
-	<header>
-		<div class="profile-page sidebar-collapse">
-			<nav class="navbar navbar-expand-lg fixed-top bg-primary">
-				<div class="container">
-					<div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip">Grizzled Wizard</a>
-						<button id="themeToggleMobile" class="theme-toggle-btn d-lg-none" type="button"
-							aria-label="Activate dark mode" aria-pressed="false" title="Activate dark mode">
-							<span class="theme-toggle-icon" aria-hidden="true">
-								<i class="fa fa-moon-o theme-icon-moon"></i>
-								<i class="fa fa-sun-o theme-icon-sun"></i>
-							</span>
-						</button>
-						<button id="navbarTogglerButton" class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse"
-							data-target="#navigation" aria-controls="navigation" aria-expanded="false"
-							aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span
-								class="navbar-toggler-bar bar2"></span><span
-								class="navbar-toggler-bar bar3"></span></button>
-					</div>
-					<div class="collapse navbar-collapse justify-content-end" id="navigation">
-						<ul class="navbar-nav font-weight-bold">
-							<li class="nav-item"><a class="nav-link smooth-scroll" href="#home">Home</a></li>
-							<li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
-							<li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Projects</a></li>
-							<li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a>
-							</li>
-							<li class="nav-item"><a class="nav-link smooth-scroll" href="#education">Education</a></li>
-							<li class="nav-item"><a class="nav-link smooth-scroll"
-									href="#certifications">Certifications</a></li>
-							<li class="nav-item theme-toggle-nav-item d-none d-lg-flex align-items-center">
-								<button id="themeToggleDesktop" class="theme-toggle-btn" type="button"
-									aria-label="Activate dark mode" aria-pressed="false" title="Activate dark mode">
-									<span class="theme-toggle-icon" aria-hidden="true">
-										<i class="fa fa-moon-o theme-icon-moon"></i>
-										<i class="fa fa-sun-o theme-icon-sun"></i>
-									</span>
-								</button>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</div>
-	</header>
-	<div class="page-content">
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="progress-container">
+      <div class="progress-bar-scroll" id="progressBar"></div>
+    </div>
+  </div>
 
-		<!-- Progress Bar on Scroll -->
-		<div class="header">
-			<div class="progress-container">
-				<div class="progress-bar-scroll" id="progressBar"></div>
-			</div>
-		</div>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary">
+      <div class="container">
+        <div class="navbar-translate d-flex align-items-center w-100">
+          <a class="navbar-brand" href="#top" rel="tooltip">GRIZZLED WIZARD</a>
+          <button id="themeToggleMobile" class="theme-toggle-btn d-lg-none ml-auto mr-2" type="button"
+            aria-label="Activate dark mode" aria-pressed="false" title="Activate dark mode">
+            <span class="theme-toggle-icon" aria-hidden="true">
+              <i class="fa fa-moon-o theme-icon-moon"></i>
+              <i class="fa fa-sun-o theme-icon-sun"></i>
+            </span>
+          </button>
+          <button id="navbarTogglerButton" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar bar1"></span>
+            <span class="navbar-toggler-bar bar2"></span>
+            <span class="navbar-toggler-bar bar3"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navigation">
+          <ul class="navbar-nav font-weight-bold">
+            <li class="nav-item"><a class="nav-link smooth-scroll" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Projects</a></li>
+            <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link smooth-scroll" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link smooth-scroll" href="#certifications">Certifications</a></li>
+            <li class="nav-item theme-toggle-nav-item d-none d-lg-flex align-items-center">
+              <button id="themeToggleDesktop" class="theme-toggle-btn" type="button"
+                aria-label="Activate dark mode" aria-pressed="false" title="Activate dark mode">
+                <span class="theme-toggle-icon" aria-hidden="true">
+                  <i class="fa fa-moon-o theme-icon-moon"></i>
+                  <i class="fa fa-sun-o theme-icon-sun"></i>
+                </span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-		<!-- Scroll to top Button -->
-		<a id="buttonScrollTop">
-			<svg viewBox="0 0 448 512">
-				<path
-					d="m244.4 35.779 189.93 274.64c9.16 13.246 9.16 34.72 0 47.964l-22.152 32.032c-9.1444 13.223-23.965 13.248-33.131 0.0565l-151.23-217.66-151.23 217.66c-9.1659 13.192-23.986 13.166-33.131-0.0565l-22.152-32.032c-9.16-13.246-9.16-34.72 0-47.964l189.93-274.64c9.1591-13.246 24.01-13.246 33.17-0.0015z"
-					fill="#fff" stroke-width="1.1752" />
-			</svg>
-		</a>
+  <a id="buttonScrollTop" aria-label="Scroll to top">
+    <svg viewBox="0 0 448 512">
+      <path d="m244.4 35.779 189.93 274.64c9.16 13.246 9.16 34.72 0 47.964l-22.152 32.032c-9.1444 13.223-23.965 13.248-33.131 0.0565l-151.23-217.66-151.23 217.66c-9.1659 13.192-23.986 13.166-33.131-0.0565l-22.152-32.032c-9.16-13.246-9.16-34.72 0-47.964l189.93-274.64c9.1591-13.246 24.01-13.246 33.17-0.0015z" fill="#fff" stroke-width="1.1752" />
+    </svg>
+  </a>
 
-		<div>
-			<!-- HOME -->
-			<div class="profile-page" id="home">
-				<div class="wrapper">
-					<div class="page-header page-header-small" filter-color="green">
-						<div class="page-header-image" data-parallax="true"></div>
-						<div class="container mb-4 mb-sm-0 d-flex justify-content-center align-items-center">
-							<div>
-								<div class="cc-profile-image"><a href="#"><img src="images/me.jpg"
-											alt="Image" /></a></div>
-								<div class="h2 title">Nikos Kougianos</div>
-								<p class="font-weight-bold text-white mt-1 ">Java Team Lead @
-									<a target="_blank" class="text-info" href="https://playnetic.com"><u>Playnetic</u></a>
-								</p>
-								<p class=" text-white mb-0 font-weight-bold">B.Sc. Computer Science</p>
-								<p class=" text-white mb-0 small font-italic">National and Kapodistrian University of
-									Athens</p>
-								<p class=" text-white font-weight-bold mb-0">M.Sc. Data Science</p>
-								<p class=" text-white small font-italic">University of East London</p>
-							</div>
-						</div>
-						<div class="section">
-							<div class="container">
-								<div class="button-container">
-									<a class="btn btn-linkedin btn-round btn-lg btn-icon" target="_blank"
-										href="https://linkedin.com/in/kougianos" rel="tooltip" title="LinkedIn">
-										<i class="fa fa-linkedin"></i>
-									</a>
-									<a class="btn btn-github btn-round btn-lg btn-icon" target="_blank"
-										href="https://github.com/kougianos" rel="tooltip" title="GitHub">
-										<i class="fa fa-github"></i>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+  <main>
+    <section class="profile-page" id="home">
+      <div class="page-header page-header-small" filter-color="green">
+        <div class="page-header-image" data-parallax="true"></div>
+        <div class="container hero-content d-flex justify-content-center align-items-center">
+          <div class="text-center">
+            <div class="cc-profile-image"><a href="#"><img src="images/me.jpg" alt="Nikos Kougianos" /></a></div>
+            <div class="h2 title">Nikos Kougianos</div>
+            <p class="font-weight-bold text-white mt-1">Java Team Lead @
+              <a target="_blank" class="text-info" href="https://playnetic.com"><u>Playnetic</u></a>
+            </p>
+            <p class="text-white mb-0 font-weight-bold">B.Sc. Computer Science</p>
+            <p class="text-white mb-0 small font-italic">National and Kapodistrian University of Athens</p>
+            <p class="text-white font-weight-bold mb-0">M.Sc. Data Science</p>
+            <p class="text-white small font-italic">University of East London</p>
 
-			<!-- ABOUT -->
-			<div class="section" id="about">
-				<div class="container">
-					<div class="card first-card" data-aos="fade-up" data-aos-offset="10">
-						<div class="row">
-							<div class="col-lg-6 col-md-12">
-								<div class="card-body">
-									<div class="h4 mt-0 title">About</div>
-									<p>Java enthusiast with a B.Sc. in Computer Science and a M.Sc. in Data Science, bringing over 7 years of professional experience in software development.</p>
-									<p>For the past 3 years, I have gained deep expertise in the iGaming industry and microservice-based architectures, specializing in creating scalable, efficient applications that drive organizational success.</p>
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-12">
-								<div class="card-body">
-									<div class="h4 mt-0 title">Basic Information</div>
-									<div class="row mt-3">
-										<div class="col-sm-6"><strong class="">Email:</strong></div>
-										<div class="col-sm-6"><a href="mailto:nkougian@outlook.com">nkougian@outlook.com</a></div>
-									</div>
-									<div class="row mt-3">
-										<div class="col-sm-6"><strong class="">Location:</strong></div>
-										<div class="col-sm-6">Greece</div>
-									</div>
-									<div class="row mt-3">
-										<div class="col-sm-6"><strong class="">Languages:</strong></div>
-										<div class="col-sm-6">Greek, English</div>
-									</div>
-									<div class="row mt-3">
-										<div class="col-sm-6"><strong class="">Professional Experience:</strong></div>
-										<div id="yearsExperience" class="col-sm-6"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+            <div class="button-container mt-3">
+              <a class="btn btn-linkedin btn-round btn-lg btn-icon" target="_blank"
+                href="https://linkedin.com/in/kougianos" rel="tooltip" title="LinkedIn">
+                <i class="fa fa-linkedin"></i>
+              </a>
+              <a class="btn btn-github btn-round btn-lg btn-icon" target="_blank"
+                href="https://github.com/kougianos" rel="tooltip" title="GitHub">
+                <i class="fa fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-			<!-- PROJECTS -->
-			<a class="anchor" id="portfolio"></a>
-			<div class="section pt-0">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6">
-							<div class="h4 mb-4 mt-0 title">Personal Projects</div>
-						</div>
-					</div>
-					<div id="collapse4" class="tab-content gallery">
+    <section class="section" id="about">
+      <div class="container">
+        <div class="card first-card" data-aos="fade-up" data-aos-offset="10">
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <div class="card-body">
+                <div class="h4 mt-0 title">About</div>
+                <p>Java enthusiast with a B.Sc. in Computer Science and a M.Sc. in Data Science, bringing over 7 years of professional experience in software development.</p>
+                <p>For the past 3 years, I have gained deep expertise in the iGaming industry and microservice-based architectures, specializing in creating scalable, efficient applications that drive organizational success.</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="card-body">
+                <div class="h4 mt-0 title">Basic Information</div>
+                <div class="row mt-3">
+                  <div class="col-sm-6"><strong>Email:</strong></div>
+                  <div class="col-sm-6"><a href="mailto:nkougian@outlook.com">nkougian@outlook.com</a></div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-sm-6"><strong>Location:</strong></div>
+                  <div class="col-sm-6">Greece</div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-sm-6"><strong>Languages:</strong></div>
+                  <div class="col-sm-6">Greek, English</div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-sm-6"><strong>Professional Experience:</strong></div>
+                  <div id="yearsExperience" class="col-sm-6"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-						<div class="card">
-							<div class="row mx-0">
-								<div class="col-md-3 p-0 cc-porfolio-image img-raised " data-aos="fade-up"
-									data-aos-anchor-placement="top-bottom"><a
-										href="https://github.com/kougianos/threedice" target="_blank">
-										<figure class="cc-effect my-0"><img src="images/threedice.png" alt="Threedice" />
-											<figcaption>
-												<div class="h4">Threedice - A web-based dice betting game</div>
-											</figcaption>
-										</figure>
-									</a>
-								</div>
-								<div class="col-md-9 pt-3" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-									<div class="">
-										<div class="h5">Threedice - A web-based dice betting game <small class="text-secondary small">- Java</small></div>
-										<p>Full-stack Spring Boot application featuring: <br> 
-											- Idempotent Bet Placement <br> 
-											- Pessimistic Locking on Balance <br> 
-											- Transactional Integrity <br> 
-											- Integration Tests with Deterministic Dice (Testcontainers + REST Assured) <br> 
-											</p>
-									</div>
-								</div>
-							</div>
-						</div>
+    <section class="section pt-0" id="portfolio">
+      <div class="container">
+        <div class="h4 mb-4 mt-0 title">Personal Projects</div>
+        <div class="tab-content gallery">
+          <div class="card">
+            <div class="row mx-0">
+              <div class="col-md-3 p-0 cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <a href="https://github.com/kougianos/threedice" target="_blank">
+                  <figure class="cc-effect my-0"><img src="images/threedice.png" alt="Threedice" />
+                    <figcaption><div class="h4">Threedice - A web-based dice betting game</div></figcaption>
+                  </figure>
+                </a>
+              </div>
+              <div class="col-md-9 pt-3" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="h5">Threedice - A web-based dice betting game <small class="text-secondary small">- Java</small></div>
+                <p>Full-stack Spring Boot application featuring: <br>
+                  - Idempotent Bet Placement <br>
+                  - Pessimistic Locking on Balance <br>
+                  - Transactional Integrity <br>
+                  - Integration Tests with Deterministic Dice (Testcontainers + REST Assured) <br>
+                </p>
+              </div>
+            </div>
+          </div>
 
-						<div class="card">
-							<div class="row mx-0">
-								<div class="col-md-3 p-0 cc-porfolio-image img-raised " data-aos="fade-up"
-									data-aos-anchor-placement="top-bottom"><a
-										href="https://grizzledwizard.eu/playground" target="_blank">
-										<figure class="cc-effect my-0"><img src="images/playground.png" alt="Spring Boot & Angular playground" />
-											<figcaption>
-												<div class="h4">Spring Boot & Angular playground</div>
-											</figcaption>
-										</figure>
-									</a>
-								</div>
-								<div class="col-md-9 pt-3" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-									<div class="">
-										<div class="h5">Spring Boot & Angular playground <small class="text-secondary small">- Java/Angular</small></div>
-										<p>Full-stack Spring Boot and Angular application featuring: <br> 
-											- Advanced Redis caching with real-time analytics and cache-aside pattern implementation <br> 
-											- JWT-based authentication system with user management and role-based access control <br> 
-											- WebSocket integration for live chat functionality with user connection tracking <br> 
-											- External API integration (Disney API, DigitalOcean Status, UK Bank Holidays) with intelligent caching <br> 
-											- Kafka event streaming for cache analytics and audit trails <br> 
-											- MongoDB integration for persistent data storage with rate limiting and performance monitoring <br> 
-											- Modern Angular frontend with Material UI components and protected routing</p>
-									</div>
-								</div>
-							</div>
-						</div>
+          <div class="card">
+            <div class="row mx-0">
+              <div class="col-md-3 p-0 cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <a href="https://grizzledwizard.eu/playground" target="_blank">
+                  <figure class="cc-effect my-0"><img src="images/playground.png" alt="Spring Boot & Angular playground" />
+                    <figcaption><div class="h4">Spring Boot & Angular playground</div></figcaption>
+                  </figure>
+                </a>
+              </div>
+              <div class="col-md-9 pt-3" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="h5">Spring Boot & Angular playground <small class="text-secondary small">- Java/Angular</small></div>
+                <p>Full-stack Spring Boot and Angular application featuring: <br>
+                  - Advanced Redis caching with real-time analytics and cache-aside pattern implementation <br>
+                  - JWT-based authentication system with user management and role-based access control <br>
+                  - WebSocket integration for live chat functionality with user connection tracking <br>
+                  - External API integration (Disney API, DigitalOcean Status, UK Bank Holidays) with intelligent caching <br>
+                  - Kafka event streaming for cache analytics and audit trails <br>
+                  - MongoDB integration for persistent data storage with rate limiting and performance monitoring <br>
+                  - Modern Angular frontend with Material UI components and protected routing
+                </p>
+              </div>
+            </div>
+          </div>
 
-						<div class="card">
-							<div class="row mx-0">
-								<div class="col-md-3 p-0 cc-porfolio-image img-raised " data-aos="fade-up"
-									data-aos-anchor-placement="top-bottom"><a
-										href="https://github.com/kougianos/rest-api-aggregator" target="_blank">
-										<figure class="cc-effect my-0"><img src="images/aggregator.png" alt="Rest Api Aggregator" />
-											<figcaption>
-												<div class="h4">Rest Api Aggregator</div>
-											</figcaption>
-										</figure>
-									</a>
-								</div>
-								<div class="col-md-9 pt-3" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-									<div class="">
-										<div class="h5">Rest Api Aggregator <small class="text-secondary small">- Java</small></div>
-										<p>Spring boot service with the following functionalities: <br>
-											- Integrate with 3 REST APIs and dynamically combine the responses into 1, depending on the client's requested parameters <br>
-											- Implement request throttling and batching of individual requests, using BlockingQueues. <br>
-											- Create a scheduler that periodically checks items left in queues, and returns a response to the caller, guaranteeing a 10-second SLA <br>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
+          <div class="card">
+            <div class="row mx-0">
+              <div class="col-md-3 p-0 cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <a href="https://github.com/kougianos/rest-api-aggregator" target="_blank">
+                  <figure class="cc-effect my-0"><img src="images/aggregator.png" alt="Rest Api Aggregator" />
+                    <figcaption><div class="h4">Rest Api Aggregator</div></figcaption>
+                  </figure>
+                </a>
+              </div>
+              <div class="col-md-9 pt-3" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="h5">Rest Api Aggregator <small class="text-secondary small">- Java</small></div>
+                <p>Spring boot service with the following functionalities: <br>
+                  - Integrate with 3 REST APIs and dynamically combine the responses into 1, depending on the client's requested parameters <br>
+                  - Implement request throttling and batching of individual requests, using BlockingQueues. <br>
+                  - Create a scheduler that periodically checks items left in queues, and returns a response to the caller, guaranteeing a 10-second SLA <br>
+                </p>
+              </div>
+            </div>
+          </div>
 
-						<div class="card">
-							<div class="row mx-0">
-								<div class="col-md-3 p-0 cc-porfolio-image img-raised " data-aos="fade-up"
-									data-aos-anchor-placement="top-bottom"><a
-										href="https://github.com/kougianos/carly" target="_blank">
-										<figure class="cc-effect my-0"><img src="images/carly.png" alt="Carly" />
-											<figcaption>
-												<div class="h4">Carly Marketplace</div>
-											</figcaption>
-										</figure>
-									</a>
-								</div>
-								<div class="col-md-9 pt-3" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-									<div class="">
-										<div class="h5">Carly Marketplace <small class="text-secondary small">- Java</small></div>
-										<p>2 spring boot microservices using Apache Kafka, MongoDB and Role Based Access Control (RBAC)
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
+          <div class="card">
+            <div class="row mx-0">
+              <div class="col-md-3 p-0 cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <a href="https://github.com/kougianos/carly" target="_blank">
+                  <figure class="cc-effect my-0"><img src="images/carly.png" alt="Carly" />
+                    <figcaption><div class="h4">Carly Marketplace</div></figcaption>
+                  </figure>
+                </a>
+              </div>
+              <div class="col-md-9 pt-3" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="h5">Carly Marketplace <small class="text-secondary small">- Java</small></div>
+                <p>2 spring boot microservices using Apache Kafka, MongoDB and Role Based Access Control (RBAC)</p>
+              </div>
+            </div>
+          </div>
 
-						<div class="card">
-							<div class="row mx-0">
-								<div class="col-md-3 p-0 cc-porfolio-image img-raised " data-aos="fade-up"
-									data-aos-anchor-placement="top-bottom"><a
-										href="https://grizzledwizard.eu/phonevice" target="_blank">
-										<figure class="cc-effect my-0"><img src="images/phonevice.png" alt="Phonevice" />
-											<figcaption>
-												<div class="h4">Phonevice</div>
-												<p>PHP</p>
-											</figcaption>
-										</figure>
-									</a>
-								</div>
-								<div class="col-md-9 pt-3" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-									<div class="">
-										<div class="h5">Phonevice <small class="text-secondary small">- PHP</small></div>
-										<p>This project offers a personalized smartphone recommendation based on 3 simple steps. Budget, features and types of use. An advanced recommendation algorithm takes place under the hood, that will always suggest the top 3 smartphones on the results page.
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
+          <div class="card">
+            <div class="row mx-0">
+              <div class="col-md-3 p-0 cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <a href="https://grizzledwizard.eu/phonevice" target="_blank">
+                  <figure class="cc-effect my-0"><img src="images/phonevice.png" alt="Phonevice" />
+                    <figcaption>
+                      <div class="h4">Phonevice</div>
+                      <p>PHP</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <div class="col-md-9 pt-3" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="h5">Phonevice <small class="text-secondary small">- PHP</small></div>
+                <p>This project offers a personalized smartphone recommendation based on 3 simple steps. Budget, features and types of use. An advanced recommendation algorithm takes place under the hood, that will always suggest the top 3 smartphones on the results page.</p>
+              </div>
+            </div>
+          </div>
 
-						<div class="card">
-							<div class="row mx-0">
-								<div class="col-md-3 p-0 cc-porfolio-image img-raised " data-aos="fade-up"
-									data-aos-anchor-placement="top-bottom"><a
-										href="https://github.com/kougianos/ds-thesis" target="_blank">
-										<figure class="cc-effect my-0"><img src="images/ds_thesis.png" alt="Thesis" />
-											<figcaption>
-												<div class="h4">Thesis</div>
-											</figcaption>
-										</figure>
-									</a>
-								</div>
-								<div class="col-md-9 pt-3" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-									<div class="">
-										<div class="h5">Data Science Thesis <small class="text-secondary small">- Python</small></div>
-										<p>CLI application developed with Python, applying Supervised & Unsupervised ML Algorithms on a predefined dataset containing building energy features. The results from the algorithm executions are persisted on a cloud MongoDB cluster.
-										</p>
-										<p class="my-1 small font-italic">This project was developed in terms of my M.Sc. in Data Science.</p>
-									</div>
-								</div>
-							</div>
-						</div>
+          <div class="card">
+            <div class="row mx-0">
+              <div class="col-md-3 p-0 cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <a href="https://github.com/kougianos/ds-thesis" target="_blank">
+                  <figure class="cc-effect my-0"><img src="images/ds_thesis.png" alt="Thesis" />
+                    <figcaption><div class="h4">Thesis</div></figcaption>
+                  </figure>
+                </a>
+              </div>
+              <div class="col-md-9 pt-3" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="h5">Data Science Thesis <small class="text-secondary small">- Python</small></div>
+                <p>CLI application developed with Python, applying Supervised & Unsupervised ML Algorithms on a predefined dataset containing building energy features. The results from the algorithm executions are persisted on a cloud MongoDB cluster.</p>
+                <p class="my-1 small font-italic">This project was developed in terms of my M.Sc. in Data Science.</p>
+              </div>
+            </div>
+          </div>
 
-						<div class="card">
-							<div class="row mx-0">
-								<div class="col-md-3 p-0 cc-porfolio-image img-raised " data-aos="fade-up"
-									data-aos-anchor-placement="top-bottom"><a
-										href="https://github.com/kougianos/advanced-decision-making" target="_blank">
-										<figure class="cc-effect my-0"><img src="images/ml.png" alt="AdvancedDecisionMaking" />
-											<figcaption>
-												<div class="h4 mt-5">Advanced Decision Making</div>
-											</figcaption>
-										</figure>
-									</a>
-								</div>
-								<div class="col-md-9 pt-3" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-									<div class="">
-										<div class="h5">Advanced Decision Making <small class="text-secondary small">- Python</small></div>
-										<p>Python CLI application that applies Gaussian Naive Bayes and Multiple Linear Regression supervised algorithms and predicting with excellent accuracy student grades based on their social, family and other characteristics.
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
+          <div class="card">
+            <div class="row mx-0">
+              <div class="col-md-3 p-0 cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <a href="https://github.com/kougianos/advanced-decision-making" target="_blank">
+                  <figure class="cc-effect my-0"><img src="images/ml.png" alt="AdvancedDecisionMaking" />
+                    <figcaption><div class="h4 mt-5">Advanced Decision Making</div></figcaption>
+                  </figure>
+                </a>
+              </div>
+              <div class="col-md-9 pt-3" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="h5">Advanced Decision Making <small class="text-secondary small">- Python</small></div>
+                <p>Python CLI application that applies Gaussian Naive Bayes and Multiple Linear Regression supervised algorithms and predicting with excellent accuracy student grades based on their social, family and other characteristics.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-					</div>
-				</div>
-			</div>
+    <section class="section pt-0" id="experience">
+      <div class="container cc-experience">
+        <div class="h4 mb-4 mt-0 title">Work Experience</div>
 
-			<!-- EXPERIENCE -->
-			<a class="anchor" id="experience"></a>
-			<div class="section pt-0">
-				<div class="container cc-experience">
-					<div class="h4 mb-4 mt-0 title">Work Experience</div>
+        <div class="card">
+          <div class="row mx-0">
+            <div class="col-md-2 p-0 playnetic-bg d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <a class="company-anchor" href="#" target="_blank"><img class="atos-img" src="images/playnetic.png" alt="Playnetic" width="190" /></a>
+            </div>
+            <div class="col-md-10 pl-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body pb-0 pl-3">
+                <div class="h5 mb-0 d-flex justify-content-between"><div>Java Team Lead - Full Time Contract</div><small class="text-secondary small">April 2025 - Present</small></div>
+                <p class="mb-1"><strong>Playnetic (Casino Dpt.)</strong> | <i>United Kingdom (Remote)</i></p>
+                <ul class="pl-2 mb-1">
+                  <li><strong>Architected high-performance backend services</strong> for casino platform with focus on scalability and reliability across multiple third-party integrations.</li>
+                  <li><strong>Partnered with product owners</strong> to convert complex operator requirements into reusable components, accelerating time-to-market.</li>
+                  <li><strong>Built automated session management system</strong> handling incomplete gaming rounds with secure server-side actions and persistent state tracking.</li>
+                </ul>
+                <p><b>Stack:</b> <br>Java 21, Spring Boot 3, Apache Kafka, Redis, Cassandra DB, PostgreSQL</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-					<!-- PLAYNETIC -->
-					<div class="card">
-						<div class="row mx-0">
-							<div class="col-md-2 p-0 playnetic-bg d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-								<a class="company-anchor" href="#" target="_blank">
-									<!-- TODO: Add Playnetic logo -->
-									<img class="atos-img" src="images/playnetic.png" alt="Playnetic" width="190" />
-								</a>
-							</div>
-							<div class="col-md-10 pl-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-								<div class="card-body pb-0 pl-3">
-									<div class="h5 mb-0 d-flex justify-content-between">
-										<div>Java Team Lead - Full Time Contract</div>
-										<small class="text-secondary small">April 2025 - Present</small>
-									</div>
-									<p class="mb-1">
-									<strong>Playnetic (Casino Dpt.)</strong> | <i>United Kingdom (Remote)</i>
-									</p>
-									<ul class="pl-2 mb-1">
-									<li><strong>Architected high-performance backend services</strong> for casino platform with focus on scalability and reliability across multiple third-party integrations.</li>
-									<li><strong>Partnered with product owners</strong> to convert complex operator requirements into reusable components, accelerating time-to-market.</li>
-									<li><strong>Built automated session management system</strong> handling incomplete gaming rounds with secure server-side actions and persistent state tracking.</li>
-									</ul>
-									<p><b>Stack:</b> <br>
-										Java 21, Spring Boot 3, Apache Kafka, Redis, Cassandra DB, PostgreSQL
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
+        <div class="card">
+          <div class="row mx-0">
+            <div class="col-md-2 p-0 betvictor-bg d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <a class="company-anchor" href="https://www.linkedin.com/company/bv-group" target="_blank"><img class="atos-img" src="images/betvictor-logo.jpg" alt="BetVictor" width="150" /></a>
+            </div>
+            <div class="col-md-10 pl-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body pb-0 pl-3">
+                <div class="h5 mb-0 d-flex justify-content-between"><div>Senior Software Engineer (Java) - Full Time Contract</div><small class="text-secondary small">August 2022 - April 2025</small></div>
+                <p class="mb-1"><strong>BVGroup (Gaming/Casino Dpt.)</strong> | <i>Gibraltar (Remote)</i> <br><a class="text-dark" href="https://betvictor.com">https://betvictor.com</a></p>
+                <ul class="pl-2 mb-1">
+                  <li><strong>Boosted marketing tool performance by 30%</strong> through optimization and enabled seamless third-party API integrations.</li>
+                  <li><strong>Refactored promotions platform</strong> from fragmented systems to unified UI, dramatically reducing complexity and operator friction.</li>
+                  <li><strong>Developed fault-tolerant microservices</strong> for third-party game provider integrations handling authentication, launches, and real-time transactions.</li>
+                  <li><strong>Implemented reactive architecture</strong> using Spring Webflux and Kafka for non-blocking inter-service communication and horizontal scaling.</li>
+                </ul>
+                <p><b>Stack:</b> <br>Java 21, Spring Boot 3, Apache Kafka, Redis, MongoDB, Spring Reactive (Webflux), Junit5 (Mockito), testcontainers, Karate (BDD), GCP, Javascript</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-					<!-- BVGROUP -->
-					<div class="card">
-						<div class="row mx-0">
-							<div class="col-md-2 p-0 betvictor-bg d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-								<a class="company-anchor" href="https://www.linkedin.com/company/bv-group" target="_blank">
-									<img class="atos-img" src="images/betvictor-logo.jpg" alt="BetVictor" width="150" />
-								</a>
-							</div>
-							<div class="col-md-10 pl-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-								<div class="card-body pb-0 pl-3">
-									<div class="h5 mb-0 d-flex justify-content-between">
-										<div>Senior Software Engineer (Java) - Full Time Contract</div>
-										<small class="text-secondary small">August 2022 - April 2025</small>
-									</div>
-									<p class="mb-1">
-									<strong>BVGroup (Gaming/Casino Dpt.)</strong> | <i>Gibraltar (Remote)</i> <br>
-										<a class="text-dark" href="https://betvictor.com">https://betvictor.com</a>
-									</p>
-									<ul class="pl-2 mb-1">
-									<li><strong>Boosted marketing tool performance by 30%</strong> through optimization and enabled seamless third-party API integrations.</li>
-									<li><strong>Refactored promotions platform</strong> from fragmented systems to unified UI, dramatically reducing complexity and operator friction.</li>
-									<li><strong>Developed fault-tolerant microservices</strong> for third-party game provider integrations handling authentication, launches, and real-time transactions.</li>
-									<li><strong>Implemented reactive architecture</strong> using Spring Webflux and Kafka for non-blocking inter-service communication and horizontal scaling.</li>
-									</ul>
-									<p><b>Stack:</b> <br>
-										Java 21, Spring Boot 3, Apache Kafka, Redis, MongoDB, Spring Reactive (Webflux), Junit5 (Mockito), testcontainers, Karate (BDD), GCP, Javascript
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
+        <div class="card">
+          <div class="row mx-0">
+            <div class="col-md-2 p-0 khantech-bg d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <a class="company-anchor" href="#" target="_blank"><img class="atos-img" src="images/khantech.png" alt="Khantech" width="150" /></a>
+            </div>
+            <div class="col-md-10 pl-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body pb-0 pl-3">
+                <div class="h5 mb-0 d-flex justify-content-between"><div>Lead Engineer (Java) - 3 Month Contract</div><small class="text-secondary small">July 2024 - September 2024</small></div>
+                <p class="mb-1"><strong>Khantech (Casino & Sportsbook)</strong> | <i>Dubai (Remote)</i></p>
+                <ul class="pl-2 mb-1">
+                  <li><strong>Architected core wallet and backend systems</strong> from scratch including transaction/player history, session-based BetSlips, and comprehensive Casino API.</li>
+                  <li><strong>Led end-to-end integrations</strong> with TimelessTech (casino) and Betby (sportsbook) for seamless game launches and real-time transactions.</li>
+                  <li><strong>Designed event-driven architecture</strong> with Kafka enabling asynchronous, scalable microservice communication.</li>
+                </ul>
+                <p><b>Stack:</b> <br>Java 21, Spring Boot 3, Apache Kafka, Redis, MongoDB, Spring Reactive (Webflux), Kubernetes</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-					<!-- KHANTECH -->
-					<div class="card">
-						<div class="row mx-0">
-							<div class="col-md-2 p-0 khantech-bg d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-								<a class="company-anchor" href="#" target="_blank">
-									<!-- TODO: Add Khantech logo -->
-									<img class="atos-img" src="images/khantech.png" alt="Khantech" width="150" />
-								</a>
-							</div>
-							<div class="col-md-10 pl-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-								<div class="card-body pb-0 pl-3">
-									<div class="h5 mb-0 d-flex justify-content-between">
-										<div>Lead Engineer (Java) - 3 Month Contract</div>
-										<small class="text-secondary small">July 2024 - September 2024</small>
-									</div>
-									<p class="mb-1">
-									<strong>Khantech (Casino & Sportsbook)</strong> | <i>Dubai (Remote)</i>
-									</p>
-									<ul class="pl-2 mb-1">
-									<li><strong>Architected core wallet and backend systems</strong> from scratch including transaction/player history, session-based BetSlips, and comprehensive Casino API.</li>
-									<li><strong>Led end-to-end integrations</strong> with TimelessTech (casino) and Betby (sportsbook) for seamless game launches and real-time transactions.</li>
-									<li><strong>Designed event-driven architecture</strong> with Kafka enabling asynchronous, scalable microservice communication.</li>
-									</ul>
-									<p><b>Stack:</b> <br>
-										Java 21, Spring Boot 3, Apache Kafka, Redis, MongoDB, Spring Reactive (Webflux), Kubernetes
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
+        <div class="card">
+          <div class="row mx-0">
+            <div class="col-md-2 p-0 atos-bg d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <a class="company-anchor" href="https://atos.net" target="_blank"><img class="atos-img" src="images/atos-logo-white.png" alt="Atos" width="150" /></a>
+            </div>
+            <div class="col-md-10 pl-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body pb-0 pl-3">
+                <div class="h5 mb-0 d-flex justify-content-between"><div>Software Engineer (Java) - Full Time</div><small class="text-secondary small">January 2022 - August 2022</small></div>
+                <p class="mb-1"><strong>Atos</strong> | <i>Athens, Greece (Remote)</i> <br><a class="text-dark" href="https://atos.net">https://atos.net</a></p>
+                <ul class="pl-2 mb-1">
+                  <li><strong>Delivered microservices-based Healthcare Interoperability platform</strong> serving multiple healthcare clients with FHIR compliance.</li>
+                  <li><strong>Optimized database performance by 40%</strong> implementing async multithreaded lookups using Spring's async capabilities.</li>
+                  <li><strong>Built Role-Based Access Control (RBAC)</strong> system with Spring Security, JWT token generation, and secure authentication.</li>
+                </ul>
+                <p><b>Stack:</b> <br>Java 17, Spring Boot, Maven, Microsoft Azure, PostgreSQL, Junit, Mockito, RestAssured, HAPI-FHIR (server & java client)</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-					<!-- ATOS -->
-					<div class="card">
-						<div class="row mx-0">
-							<div class="col-md-2 p-0 atos-bg d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-								<a class="company-anchor" href="https://atos.net" target="_blank">
-									<img class="atos-img" src="images/atos-logo-white.png" alt="Atos" width="150" />
-								</a>
-							</div>
-							<div class="col-md-10 pl-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-								<div class="card-body pb-0 pl-3">
-									<div class="h5 mb-0 d-flex justify-content-between">
-										<div>Software Engineer (Java) - Full Time</div>
-										<small class="text-secondary small">January 2022 - August 2022</small>
-									</div>
-									<p class="mb-1">
-									<strong>Atos</strong> | <i>Athens, Greece (Remote)</i> <br>
-										<a class="text-dark" href="https://atos.net">https://atos.net</a>
-									</p>
-									<ul class="pl-2 mb-1">
-									<li><strong>Delivered microservices-based Healthcare Interoperability platform</strong> serving multiple healthcare clients with FHIR compliance.</li>
-									<li><strong>Optimized database performance by 40%</strong> implementing async multithreaded lookups using Spring's async capabilities.</li>
-									<li><strong>Built Role-Based Access Control (RBAC)</strong> system with Spring Security, JWT token generation, and secure authentication.</li>
-									</ul>
-									<p><b>Stack:</b> <br>
-										Java 17, Spring Boot, Maven, Microsoft Azure, PostgreSQL, Junit, Mockito, RestAssured, HAPI-FHIR (server & java client)
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
+        <div class="card">
+          <div class="row mx-0">
+            <div class="col-md-2 p-0 cosmote-bg d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <a class="company-anchor" href="https://cosmote.gr" target="_blank"><img src="images/cosmote.png" alt="Cosmote" width="150" /></a>
+            </div>
+            <div class="col-md-10 pl-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body pb-0 pl-3">
+                <div class="h5 mb-0 d-flex justify-content-between"><div>Software Engineer (Java) - Full Time</div><small class="text-secondary small">July 2019 - January 2022</small></div>
+                <p class="mb-1"><strong>Hellenic Telecommunications Organization S.A.</strong> | <i>Athens, Greece</i> <br><a class="text-dark" href="https://cosmote.gr">https://cosmote.gr</a></p>
+                <ul class="pl-2">
+                  <li><strong>Built scalable microservices</strong> for internal Communication Hub transmitting 1M+ daily SMS/Email/Push notifications.</li>
+                  <li><strong>Engineered microservices integration layer</strong> enabling seamless communication between disparate internal systems.</li>
+                  <li><strong>Led Agile Transformation initiative</strong> as founding member of first Scrum team, coordinating cross-functional backend teams.</li>
+                </ul>
+                <p><b>Stack:</b> <br>Java 11, Spring Boot, Maven, Kubernetes, Jenkins, MongoDB, Apache Kafka, Junit, Kibana, Grafana</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-					<!-- COSMOTE -->
-					<div class="card">
-						<div class="row mx-0">
-							<div class="col-md-2 p-0 cosmote-bg d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-								<a class="company-anchor" href="https://cosmote.gr" target="_blank">
-									<img src="images/cosmote.png" alt="Cosmote" width="150" />
-								</a>
-							</div>
-							<div class="col-md-10 pl-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-								<div class="card-body pb-0 pl-3">
-									<div class="h5 mb-0 d-flex justify-content-between">
-										<div>Software Engineer (Java) - Full Time</div>
-										<small class="text-secondary small">July 2019 - January 2022</small>
-									</div>
-									<p class="mb-1">
-									<strong>Hellenic Telecommunications Organization S.A.</strong> | <i>Athens, Greece</i> <br>
-										<a class="text-dark" href="https://cosmote.gr">https://cosmote.gr</a>
-									</p>
-									<ul class="pl-2">
-									<li><strong>Built scalable microservices</strong> for internal Communication Hub transmitting 1M+ daily SMS/Email/Push notifications.</li>
-									<li><strong>Engineered microservices integration layer</strong> enabling seamless communication between disparate internal systems.</li>
-									<li><strong>Led Agile Transformation initiative</strong> as founding member of first Scrum team, coordinating cross-functional backend teams.</li>
-									</ul>
-									<p><b>Stack:</b> <br>
-										Java 11, Spring Boot, Maven, Kubernetes, Jenkins, MongoDB, Apache Kafka, Junit, Kibana, Grafana
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
+        <div class="card">
+          <div class="row mx-0">
+            <div class="col-md-2 p-0 phonevice-bg d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <a class="company-anchor" href="https://phonevice.com" target="_blank"><img src="images/phonevice-logo.png" alt="Phonevice" width="150" /></a>
+            </div>
+            <div class="col-md-10 pl-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body pb-0 pl-3">
+                <div class="h5 mb-0 d-flex justify-content-between"><div>Lead Engineer (PHP) - Contract</div><small class="text-secondary small">June 2019 - March 2020</small></div>
+                <p class="mb-1"><strong>Phonevice</strong> | <i>Athens, Greece (Remote)</i> <br><a class="text-dark" href="https://phonevice.com">https://phonevice.com</a></p>
+                <ul class="pl-2">
+                  <li><strong>Built full-stack platform from ground up</strong> with custom recommendation engine and modern UI/UX.</li>
+                  <li><strong>Architected backend system and mentored team</strong> on best practices, coding standards, and design patterns.</li>
+                  <li><strong>Migrated Python algorithms to production PHP backend</strong> translating complex business logic into scalable system.</li>
+                  <li><strong>Developed partner REST API</strong> enabling third-party integrations and B2B partnerships.</li>
+                </ul>
+                <p><b>Technologies/Tools used:</b> <br>PHP 7, Bootstrap 4, Jquery, PHP Smarty Template, MongoDB, Python 3, Git, Bash, Microsoft Azure</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-					<!-- PHONEVICE -->
-					<div class="card">
-						<div class="row mx-0">
-							<div class="col-md-2 p-0 phonevice-bg d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-								<a class="company-anchor" href="https://phonevice.com" target="_blank">
-									<img src="images/phonevice-logo.png" alt="Phonevice" width="150" />
-								</a>
-							</div>
-							<div class="col-md-10 pl-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-								<div class="card-body pb-0 pl-3">
-									<div class="h5 mb-0 d-flex justify-content-between">
-										<div>Lead Engineer (PHP) - Contract</div>
-										<small class="text-secondary small">June 2019 - March 2020</small>
-									</div>
-									<p class="mb-1">
-									<strong>Phonevice</strong> | <i>Athens, Greece (Remote)</i> <br>
-										<a class="text-dark" href="https://phonevice.com">https://phonevice.com</a>
-									</p>
-									<ul class="pl-2">
-									<li><strong>Built full-stack platform from ground up</strong> with custom recommendation engine and modern UI/UX.</li>
-									<li><strong>Architected backend system and mentored team</strong> on best practices, coding standards, and design patterns.</li>
-									<li><strong>Migrated Python algorithms to production PHP backend</strong> translating complex business logic into scalable system.</li>
-									<li><strong>Developed partner REST API</strong> enabling third-party integrations and B2B partnerships.</li>
-									</ul>
-									<p><b>Technologies/Tools used:</b> <br>
-										PHP 7, Bootstrap 4, Jquery, PHP Smarty Template, MongoDB, Python 3, Git, Bash, Microsoft Azure
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
+        <div class="card">
+          <div class="row mx-0">
+            <div class="col-md-2 p-0 figame-bg d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <a class="company-anchor" href="https://figame.gr" target="_blank"><img src="images/figame1.png" alt="Figame" width="150" /></a>
+            </div>
+            <div class="col-md-10 pl-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body pb-0 pl-3">
+                <div class="h5 mb-0 d-flex justify-content-between"><div>Full Stack Engineer (PHP) - Full Time</div><small class="text-secondary small">November 2018 - May 2019</small></div>
+                <p class="mb-1"><strong>Figame LTD</strong> | <i>Athens, Greece</i> <br><a class="text-dark" href="https://figame.gr">https://figame.gr</a></p>
+                <ul class="pl-2">
+                  <li><strong>Integrated Expedia and Booking.com APIs</strong> delivering new travel services to main site and affiliate network.</li>
+                  <li><strong>Reduced flight search response time by 80%</strong> implementing parallel search with PHP MultiCurl, dramatically improving UX.</li>
+                </ul>
+                <p><b>Stack:</b> <br>PHP 7, Bootstrap 4, jQuery, MongoDB, MySQL, SVN, Bash</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-					<!-- FIGAME -->
-					<div class="card">
-						<div class="row mx-0">
-							<div class="col-md-2 p-0 figame-bg d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-								<a class="company-anchor" href="https://figame.gr" target="_blank">
-									<img src="images/figame1.png" alt="Figame" width="150" />
-								</a>
-							</div>
-							<div class="col-md-10 pl-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-								<div class="card-body pb-0 pl-3">
-									<div class="h5 mb-0 d-flex justify-content-between">
-										<div>Full Stack Engineer (PHP) - Full Time</div>
-										<small class="text-secondary small">November 2018 - May 2019</small>
-									</div>
-									<p class="mb-1">
-									<strong>Figame LTD</strong> | <i>Athens, Greece</i> <br>
-										<a class="text-dark" href="https://figame.gr">https://figame.gr</a>
-									</p>
-									<ul class="pl-2">
-									<li><strong>Integrated Expedia and Booking.com APIs</strong> delivering new travel services to main site and affiliate network.</li>
-									<li><strong>Reduced flight search response time by 80%</strong> implementing parallel search with PHP MultiCurl, dramatically improving UX.</li>
-									</ul>
-									<p><b>Stack:</b> <br>
-										PHP 7, Bootstrap 4, jQuery, MongoDB, MySQL, SVN, Bash
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
+    <section class="section pt-0" id="education">
+      <div class="container cc-education">
+        <div class="h4 mb-4 mt-0 title">Education</div>
+        <div class="education-grid">
+          <div class="card px-0 education-card">
+            <div class="row mx-0">
+              <div class="col-12 p-0 figame-bg d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <a class="company-anchor" href="https://www.di.uoa.gr" target="_blank"><img src="images/di-logo.png" alt="DI" height="150" /></a>
+              </div>
+              <div class="col-12 px-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body pb-0 pl-3">
+                  <div class="h5 mb-0 d-flex justify-content-between">B.Sc. Computer Science<small class="text-secondary small">2011-2018</small></div>
+                  <p class="mb-1"><strong>National and Kapodistrian University of Athens</strong> <br> <i>Athens, Greece</i> <br><a class="text-dark" href="https://www.di.uoa.gr">https://www.di.uoa.gr</a></p>
+                  <ul class="pl-2">
+                    <li class="mt-2">Major courses in field of study</li>
+                    <li>Object-oriented programming (C++, Java)</li>
+                    <li>Relational Databases (SQL)</li>
+                    <li>Algorithms and Complexity</li>
+                    <li>Web development</li>
+                    <li class="mt-2">University Projects</li>
+                    <li><a href="https://github.com/kougianos/Homie" target="_blank" rel="noopener noreferrer">Airbnb Clone</a></li>
+                    <li><a href="https://github.com/kougianos/FileTransfer" target="_blank" rel="noopener noreferrer">P2P File Transferring Application</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="vl" aria-hidden="true"></div>
 
+          <div class="card px-0 education-card">
+            <div class="row mx-0">
+              <div class="col-12 p-0 figame-bg d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <a class="company-anchor" href="https://www.uel.ac.uk" target="_blank"><img src="images/uel-logo.png" alt="UEL" height="150" /></a>
+              </div>
+              <div class="col-12 px-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body pb-0 pl-3">
+                  <div class="h5 mb-0 d-flex justify-content-between">M.Sc. Data Science<small class="text-secondary small">2019-2021</small></div>
+                  <p class="mb-1"><strong>University of East London</strong> <br> <i>Athens, Greece (Remote)</i> <br><a class="text-dark" href="https://www.uel.ac.uk">https://www.uel.ac.uk</a></p>
+                  <ul class="pl-2">
+                    <li class="mt-2">Thesis</li>
+                    <li><a href="https://github.com/kougianos/ds-thesis" target="_blank" rel="noopener noreferrer">Data Science Thesis</a></li>
+                    <li><a href="https://grizzledwizard.eu/docs/thesis_kougianos.pdf" target="_blank" rel="noopener noreferrer">Data Science Thesis PDF</a></li>
+                    <li class="mt-2">Data Ecology</li>
+                    <li><a href="https://grizzledwizard.eu/docs/StreamingAnalytics.pptx" target="_blank" rel="noopener noreferrer">Streaming Analytics Presentation</a></li>
+                    <li><a href="https://grizzledwizard.eu/docs/StreamingAnalytics.pdf" target="_blank" rel="noopener noreferrer">Streaming Analytics Assignment</a></li>
+                    <li class="mt-2">Advanced Decision Making</li>
+                    <li><a href="https://github.com/kougianos/advanced-decision-making" target="_blank" rel="noopener noreferrer">Machine Learning Assignment</a></li>
+                    <li><a href="https://grizzledwizard.eu/docs/AdvancedDecisionMaking.pdf" target="_blank" rel="noopener noreferrer">Machine Learning Assignment PDF</a></li>
+                    <li class="mt-2">Quantitative Data Analysis</li>
+                    <li><a href="https://grizzledwizard.eu/docs/QuantitativeDataAnalysis.pdf" target="_blank" rel="noopener noreferrer">Data Analysis Assignment</a></li>
+                    <li class="mt-2">Spatial Data Analysis</li>
+                    <li><a href="https://grizzledwizard.eu/docs/SpatialDataAnalysis_Coursework.pdf" target="_blank" rel="noopener noreferrer">Spatial Data Analysis Coursework</a></li>
+                    <li><a href="https://grizzledwizard.eu/docs/SpatialDataAnalysis_Essay.pdf" target="_blank" rel="noopener noreferrer">Spatial Data Analysis Essay</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-				</div>
-			</div>
+    <section class="section pt-0" id="certifications">
+      <div class="container cc-certifications">
+        <div class="h4 mb-4 title">Certifications</div>
+        <div class="row pt-2 mx-0">
+          <div class="col-md-6 px-0">
+            <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <ul class="pt-3 pr-3">
+                <li><a href="https://grizzledwizard.eu/kougianos/pdf/csm.pdf">Certified Scrum Master - Scrum Alliance</a></li>
+                <li><a href="https://grizzledwizard.eu/docs/proficiency.pdf">Cambridge University Certificate of Proficiency in English (CPE)</a></li>
+                <li><a href="https://grizzledwizard.eu/docs/ict.pdf">Cambridge ICT Starters</a></li>
+                <li><a href="https://grizzledwizard.eu/docs/ecdl.pdf">ECDL Core Certificate</a></li>
+                <li><a href="https://grizzledwizard.eu/kougianos/pdf/personalAndProfessionalDevelopment.pdf">Personal and Professional Development - OTE Academy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-			<!-- EDUCATION -->
-			<a class="anchor" id="education"></a>
-			<div class="section pt-0">
-				<div class="container cc-education">
-					<div class="h4 mb-4 mt-0 title">Education</div>
+  <footer class="footer">
+    <div class="container text-center">
+      <a class="cc-linkedin btn btn-link" href="https://linkedin.com/in/kougianos"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+      <a class="cc-github btn btn-link" href="https://github.com/kougianos"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+    </div>
+    <div class="text-center text-muted">
+      <p>&copy; <span id="currentYear"></span> All rights and lefts reserved. <br> Made with <i class="fa fa-heart" aria-hidden="true"></i> by <b>Nikos Kougianos</b></p>
+    </div>
+  </footer>
 
-					<div class="row mx-0 justify-content-between">
-
-						<!-- BSC -->
-						<div class="card px-0 col-md-5">
-							<div class="row mx-0">
-								<div class="col-md-12 p-0 figame-bg d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-									<a class="company-anchor" href="https://www.di.uoa.gr" target="_blank">
-										<img src="images/di-logo.png" alt="DI" height="150" />
-									</a>
-								</div>
-								<div class="col-md-12 px-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-									<div class="card-body pb-0 pl-3">
-										<div class="h5 mb-0 d-flex justify-content-between">B.Sc. Computer Science<small class="text-secondary small">2011-2018</small></div>
-										<p class="mb-1">
-											<strong>National and Kapodistrian University of Athens</strong> <br> <i>Athens, Greece</i> <br>
-											<a class="text-dark" href="https://www.di.uoa.gr">https://www.di.uoa.gr</a>
-										</p>
-										<ul class="pl-2">
-											<!-- COURSES -->
-											<li class="mt-2">Major courses in field of study</li>
-											- Object-oriented programming (C++, Java) <br>
-											- Relational Databases (SQL) <br>
-											- Algorithms and Complexity <br>
-											- Web development <br>
-											 
-											<!-- PROJECTS -->
-											<li class="mt-2">University Projects</li>
-											<a href="https://github.com/kougianos/Homie" target="_blank"
-												rel="noopener noreferrer"> - Airbnb Clone
-											</a> <br>
-											<a href="https://github.com/kougianos/FileTransfer" target="_blank"
-												rel="noopener noreferrer"> - P2P File Transferring Application
-											</a>
-
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Separator -->
-						<div class="col-md-1">
-							<div class="vl"></div>
-						</div>
-
-						<!-- MSC -->
-						<div class="card px-0 col-md-5">
-							<div class="row mx-0">
-								<div class="col-md-12 p-0 figame-bg d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-									<a class="company-anchor" href="https://www.uel.ac.uk" target="_blank">
-										<img src="images/uel-logo.png" alt="UEL" height="150" />
-									</a>
-								</div>
-								<div class="col-md-12 px-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-									<div class="card-body pb-0 pl-3">
-										<div class="h5 mb-0 d-flex justify-content-between">M.Sc. Data Science<small class="text-secondary small">2019-2021</small></div>
-										<p class="mb-1">
-											<strong>University of East London</strong> <br> <i>Athens, Greece (Remote)</i> <br>
-											<a class="text-dark" href="https://www.uel.ac.uk">https://www.uel.ac.uk</a>
-										</p>
-										<ul class="pl-2">
-											<!-- THESIS -->
-											<li class="mt-2">Thesis</li>
-											<a href="https://github.com/kougianos/ds-thesis" target="_blank"
-												rel="noopener noreferrer"> - Data Science Thesis
-											</a> <br>
-											<a href="https://grizzledwizard.eu/docs/thesis_kougianos.pdf" target="_blank"
-												rel="noopener noreferrer"> - Data Science Thesis PDF </a>
-
-											<!-- DATA ECOLOGY -->
-											<li class="mt-2">Data Ecology</li>
-											<a href="https://grizzledwizard.eu/docs/StreamingAnalytics.pptx" target="_blank"
-												rel="noopener noreferrer"> - Streaming Analytics Presentation
-											</a> <br>
-											<a href="https://grizzledwizard.eu/docs/StreamingAnalytics.pdf" target="_blank"
-												rel="noopener noreferrer"> - Streaming Analytics Assignment
-											</a>
-
-											<!-- ADVANCED DECISION MAKING -->
-											<li class="mt-2">Advanced Decision Making</li>
-											<a href="https://github.com/kougianos/advanced-decision-making" target="_blank"
-												rel="noopener noreferrer"> - Machine Learning Assignment
-											</a> <br>
-											<a href="https://grizzledwizard.eu/docs/AdvancedDecisionMaking.pdf"
-												target="_blank" rel="noopener noreferrer"> - Machine Learning Assignment PDF
-											</a>
-
-											<!-- QUANTITATIVE DATA ANALYSIS -->
-											<li class="mt-2">Quantitative Data Analysis</li>
-											<a href="https://grizzledwizard.eu/docs/QuantitativeDataAnalysis.pdf"
-												target="_blank" rel="noopener noreferrer"> - Data Analysis Assignment
-											</a>
-
-											<!-- SPATIAL DATA ANALYSIS -->
-											<li class="mt-2">Spatial Data Analysis</li>
-											<a href="https://grizzledwizard.eu/docs/SpatialDataAnalysis_Coursework.pdf"
-												target="_blank" rel="noopener noreferrer"> - Spatial Data Analysis
-												Coursework
-											</a> <br>
-											<a href="https://grizzledwizard.eu/docs/SpatialDataAnalysis_Essay.pdf"
-												target="_blank" rel="noopener noreferrer"> - Spatial Data Analysis Essay
-											</a>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-			</div>
-
-			<!-- CERTIFICATIONS -->
-			<div class="section pt-0" id="certifications">
-				<div class="container cc-certifications">
-					<div class="h4 mb-4 title">Certifications</div>
-			
-					<div class="row pt-2 mx-0">
-						<div class="col-md-6 px-0">
-			
-							<div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-			
-								<ul class="pt-2">
-									<li class=""><a href="https://grizzledwizard.eu/kougianos/pdf/csm.pdf">Certified
-											Scrum Master - Scrum Alliance</a></li>
-									<li><a href="https://grizzledwizard.eu/docs/proficiency.pdf">Cambridge University
-											Certificate of Proficiency in English (CPE)</a></li>
-									<li><a href="https://grizzledwizard.eu/docs/ict.pdf">Cambridge ICT Starters</a></li>
-									<li><a href="https://grizzledwizard.eu/docs/ecdl.pdf">ECDL Core Certificate</a></li>
-									<li><a href="https://grizzledwizard.eu/kougianos/pdf/personalAndProfessionalDevelopment.pdf">
-											Personal and Professional Development - OTE Academy</a></li>
-								</ul>
-			
-							</div>
-			
-						</div>
-					</div>
-			
-				</div>
-			</div>
-
-		</div>
-	</div>
-	<footer class="footer">
-		<div class="container text-center">
-			<a class="cc-linkedin btn btn-link" href="https://linkedin.com/in/kougianos"><i
-					class="fa fa-linkedin fa-2x " aria-hidden="true"></i></a>
-			<a class="cc-github btn btn-link " href="https://github.com/kougianos"><i class="fa fa-github fa-2x "
-					aria-hidden="true"></i></a>
-		</div>
-		<div class="text-center text-muted">
-			<p>&copy; <span id="currentYear"></span> All rights and lefts reserved. <br> Made with <i class="fa fa-heart" aria-hidden="true"></i>
-				by <b>Nikos Kougianos </b></p>
-		</div>
-	</footer>
-	<script src="js/core/jquery.3.2.1.min.js"></script>
-	<script src="js/core/popper.min.js"></script>
-	<script src="js/core/bootstrap.min.js"></script>
-	<script src="js/now-ui-kit.js?v=1.1.0"></script>
-	<script src="js/aos.js"></script>
-	<script src="scripts/main.v1.js"></script>
+  <script src="js/core/jquery.3.2.1.min.js"></script>
+  <script src="js/core/popper.min.js"></script>
+  <script src="js/core/bootstrap.min.js"></script>
+  <script src="js/now-ui-kit.js?v=1.1.0"></script>
+  <script src="js/aos.js"></script>
+  <script src="scripts/main.v1.js"></script>
 </body>
-
 </html>

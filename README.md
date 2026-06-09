@@ -44,5 +44,16 @@
 - **🎮 Carly** – Kafka-based microservice communication with RBAC  
 - **📊 Decision Maker** – ML-driven tool for advanced analytics
 
+---
+
+### Frontend Cleanup (v4)
+
+- New flattened HTML page: `index2.html`
+- New minimal stylesheet: `styles/main.v4.css`
+- Kept the same UI structure and behavior (smooth scroll, sticky navbar, dark/light mode, scroll progress, scroll-to-top)
+- Kept responsive behavior (mobile burger menu, education section stacking on small screens)
+
+Use `index2.html` as the cleaned refactor entrypoint while preserving the original `index.html` + `styles/main.v3.css` pair for comparison.
+
 
 
