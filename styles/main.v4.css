@@ -60,12 +60,18 @@ body.dark-mode {
   --hero-overlay-end: rgba(4, 9, 18, 0.4);
 }
 
+html,
 body {
   font-family: "Manrope", sans-serif;
+  max-width: 100%;
   background-color: var(--site-page-bg);
   color: var(--site-text);
   overflow-x: hidden;
   transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+main {
+  overflow-x: hidden;
 }
 
 main,
