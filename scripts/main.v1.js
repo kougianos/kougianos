@@ -92,7 +92,7 @@ $(document).ready(function () {
 			{
 				scrollTop: 0,
 			},
-			"300"
+			"100"
 		);
 	});
 
@@ -166,7 +166,7 @@ $("a.smooth-scroll").click(function (event) {
 				{
 					scrollTop: target.offset().top,
 				},
-				1000,
+				200,
 				function () {
 					// Callback after animation
 					// Must change focus!
