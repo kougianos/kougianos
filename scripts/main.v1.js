@@ -149,6 +149,15 @@ $(document).ready(function () {
 });
 
 // Smooth scroll for links with hashes
+function getNavbarOffset() {
+	var $navbar = $(".navbar");
+	if (!$navbar.length) {
+		return 0;
+	}
+	var navbarTop = parseInt($navbar.css("top"), 10) || 0;
+	return  $navbar.outerHeight();
+}
+
 $("a.smooth-scroll").click(function (event) {
 	// On-page links
 	if (
@@ -162,25 +171,36 @@ $("a.smooth-scroll").click(function (event) {
 		if (target.length) {
 			// Only prevent default if animation is actually gonna happen
 			event.preventDefault();
-			$("html, body").animate(
-				{
-					scrollTop: target.offset().top,
-				},
-				200,
-				function () {
-					// Callback after animation
-					// Must change focus!
-					var $target = $(target);
-					$target.focus();
-					if ($target.is(":focus")) {
-						// Checking if the target was focused
-						return false;
-					} else {
-						$target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
-						$target.focus(); // Set focus again
+
+			var doScroll = function () {
+				var scrollTo = Math.max(0, target.offset().top - getNavbarOffset());
+				$("html, body").animate(
+					{
+						scrollTop: scrollTo,
+					},
+					200,
+					function () {
+						// Move focus without re-scrolling (native focus would undo the navbar offset).
+						var $target = $(target);
+						var el = $target.get(0);
+						if (!$target.attr("tabindex")) {
+							$target.attr("tabindex", "-1");
+						}
+						if (el && typeof el.focus === "function") {
+							el.focus({ preventScroll: true });
+						}
 					}
-				}
-			);
+				);
+			};
+
+			// Close the mobile menu first so the offset is computed against the collapsed navbar.
+			var $navCollapse = $("#navigation");
+			if ($navCollapse.hasClass("show")) {
+				$navCollapse.one("hidden.bs.collapse", doScroll);
+				$navCollapse.collapse("hide");
+			} else {
+				doScroll();
+			}
 		}
 	}
 });
