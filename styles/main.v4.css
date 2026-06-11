@@ -551,6 +551,10 @@ body.dark-mode a.text-dark {
     margin-right: 0;
   }
 
+  #about .basic-info-row.mt-3 {
+    margin-top: 0 !important;
+  }
+
   #about .basic-info-row .basic-info-label,
   #about .basic-info-row .basic-info-value {
     display: inline;
