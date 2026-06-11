@@ -112,7 +112,19 @@ body.dark-mode .card {
   box-shadow: 0 12px 24px rgba(1, 8, 18, 0.45);
 }
 
-.title {
+.hero-name,
+.section-title,
+.entry-title {
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  font-size: 1.5rem;
+}
+
+.hero-name,
+.section-title {
   font-weight: 700;
 }
 
@@ -303,7 +315,7 @@ body.dark-mode .theme-toggle-icon .theme-icon-sun {
 }
 
 body:not(.dark-mode) .profile-page .page-header,
-body:not(.dark-mode) .profile-page .page-header .title,
+body:not(.dark-mode) .profile-page .page-header .hero-name,
 body:not(.dark-mode) .profile-page .page-header p,
 body:not(.dark-mode) .profile-page .page-header .text-white,
 body:not(.dark-mode) .profile-page .page-header .small {
@@ -508,6 +520,54 @@ body.dark-mode a.text-dark {
 
 @media (max-width: 992px) {
 
+  html {
+    font-size: 0.82rem;
+  }
+
+  .navbar {
+    font-size: 14px;
+    letter-spacing: 0.7px;
+  }
+
+  .section {
+    padding: 2.9rem 0 0;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  #about .card .row > .col-12.col-lg-6:first-child .card-body p:last-child {
+    margin-bottom: 0;
+  }
+
+  #about .card .row > .col-12.col-lg-6 + .col-12.col-lg-6 .card-body {
+    padding-top: 0;
+  }
+
+  #about .basic-info-row {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #about .basic-info-row .basic-info-label,
+  #about .basic-info-row .basic-info-value {
+    display: inline;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #about .basic-info-row .basic-info-value {
+    margin-left: 0.2rem;
+  }
+
+  .section-title,
+  .entry-title {
+    font-size: 1.1rem;
+    line-height: 1.25;
+  }
+
   .theme-toggle-nav-item {
     display: none !important;
   }
@@ -607,14 +667,44 @@ body.dark-mode a.text-dark {
   }
 
   .profile-page .page-header {
-    padding-top: 88px;
+    padding-top: 68px;
   }
 
-  .h5.justify-content-between {
+  .hero-content {
+    padding-top: 0.15rem;
+  }
+
+  .cc-profile-image img {
+    height: 130px;
+    width: 130px;
+    border-width: 9px;
+  }
+
+  .profile-page .hero-name {
+    font-size: 1.35rem;
+    margin-top: 0.45rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .profile-page p {
+    margin-bottom: 0.32rem;
+  }
+
+  .profile-page .button-container {
+    margin-top: 0.6rem !important;
+    transform: translateY(34%);
+  }
+
+  .profile-page .btn-icon {
+    width: 46px;
+    height: 46px;
+  }
+
+  .entry-title.justify-content-between {
     font-size: 1.17em;
   }
 
-  .cc-experience .h5.justify-content-between {
+  .cc-experience .entry-title.justify-content-between {
     display: block !important;
   }
 

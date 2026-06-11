@@ -89,7 +89,7 @@
         <div class="container hero-content d-flex justify-content-center align-items-center">
           <div class="text-center">
             <div class="cc-profile-image"><img src="images/me.jpg" alt="Nikos Kougianos" /></div>
-            <div class="h4 title">Nikos Kougianos</div>
+            <div class="hero-name">Nikos Kougianos</div>
             <p class="font-weight-bold text-white mt-1">Java Team Lead @
               <a target="_blank" class="text-info" href="https://playnetic.com"><u>Playnetic</u></a>
             </p>
@@ -120,29 +120,29 @@
           <div class="row">
             <div class="col-12 col-lg-6">
               <div class="card-body">
-                <div class="h4 mt-0 title">About</div>
+                <div class="section-title mt-0">About</div>
                 <p>Java enthusiast with a B.Sc. in Computer Science and a M.Sc. in Data Science, bringing over 7 years of professional experience in software development.</p>
                 <p>For the past 3 years, I have gained deep expertise in the iGaming industry and microservice-based architectures, specializing in creating scalable, efficient applications that drive organizational success.</p>
               </div>
             </div>
             <div class="col-12 col-lg-6">
               <div class="card-body">
-                <div class="h4 mt-0 title">Basic Information</div>
-                <div class="row mt-3">
-                  <div class="col-12 col-lg-6"><strong>Email:</strong></div>
-                  <div class="col-12 col-lg-6"><a href="mailto:nkougian@outlook.com">nkougian@outlook.com</a></div>
+                <div class="section-title mt-0">Basic Information</div>
+                <div class="row mt-3 basic-info-row">
+                  <div class="col-12 col-lg-6 basic-info-label"><strong>Email:</strong></div>
+                  <div class="col-12 col-lg-6 basic-info-value"><a href="mailto:nkougian@outlook.com">nkougian@outlook.com</a></div>
                 </div>
-                <div class="row mt-3">
-                  <div class="col-12 col-lg-6"><strong>Location:</strong></div>
-                  <div class="col-12 col-lg-6">Greece</div>
+                <div class="row mt-3 basic-info-row">
+                  <div class="col-12 col-lg-6 basic-info-label"><strong>Location:</strong></div>
+                  <div class="col-12 col-lg-6 basic-info-value">Greece</div>
                 </div>
-                <div class="row mt-3">
-                  <div class="col-12 col-lg-6"><strong>Languages:</strong></div>
-                  <div class="col-12 col-lg-6">Greek, English</div>
+                <div class="row mt-3 basic-info-row">
+                  <div class="col-12 col-lg-6 basic-info-label"><strong>Languages:</strong></div>
+                  <div class="col-12 col-lg-6 basic-info-value">Greek, English</div>
                 </div>
-                <div class="row mt-3">
-                  <div class="col-12 col-lg-6"><strong>Professional Experience:</strong></div>
-                  <div id="yearsExperience" class="col-12 col-lg-6"></div>
+                <div class="row mt-3 basic-info-row">
+                  <div class="col-12 col-lg-6 basic-info-label"><strong>Professional Experience:</strong></div>
+                  <div class="col-12 col-lg-6 basic-info-value"><span id="yearsExperience"></span></div>
                 </div>
               </div>
             </div>
@@ -154,19 +154,19 @@
 	<!-- PROJECTS -->
     <section class="section pt-0" id="portfolio">
       <div class="container">
-        <div class="h4 mb-4 mt-0 title">Personal Projects</div>
+        <div class="section-title mb-4 mt-0">Personal Projects</div>
         <div class="tab-content gallery">
           <div class="card">
             <div class="row mx-0">
               <div class="col-12 col-lg-3 p-0 cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <a href="https://github.com/kougianos/threedice" target="_blank">
                   <figure class="my-0"><img src="images/threedice.png" alt="Threedice" />
-                    <figcaption><div class="h4">Threedice - A web-based dice betting game</div></figcaption>
+                    <figcaption><div class="entry-title">Threedice - A web-based dice betting game</div></figcaption>
                   </figure>
                 </a>
               </div>
               <div class="col-12 col-lg-9 pt-3" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="h5">Threedice - A web-based dice betting game <small class="text-secondary small">- Java</small></div>
+                <div class="entry-title">Threedice - A web-based dice betting game <small class="text-secondary small">- Java</small></div>
                 <p>Full-stack Spring Boot application featuring: <br>
                   - Idempotent Bet Placement <br>
                   - Pessimistic Locking on Balance <br>
@@ -182,12 +182,12 @@
               <div class="col-12 col-lg-3 p-0 cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <a href="https://grizzledwizard.eu/playground" target="_blank">
                   <figure class="my-0"><img src="images/playground.png" alt="Spring Boot & Angular playground" />
-                    <figcaption><div class="h4">Spring Boot & Angular playground</div></figcaption>
+                    <figcaption><div class="entry-title">Spring Boot & Angular playground</div></figcaption>
                   </figure>
                 </a>
               </div>
               <div class="col-12 col-lg-9 pt-3" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="h5">Spring Boot & Angular playground <small class="text-secondary small">- Java/Angular</small></div>
+                <div class="entry-title">Spring Boot & Angular playground <small class="text-secondary small">- Java/Angular</small></div>
                 <p>Full-stack Spring Boot and Angular application featuring: <br>
                   - Advanced Redis caching with real-time analytics and cache-aside pattern implementation <br>
                   - JWT-based authentication system with user management and role-based access control <br>
@@ -206,12 +206,12 @@
               <div class="col-12 col-lg-3 p-0 cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <a href="https://github.com/kougianos/rest-api-aggregator" target="_blank">
                   <figure class="my-0"><img src="images/aggregator.png" alt="Rest Api Aggregator" />
-                    <figcaption><div class="h4">Rest Api Aggregator</div></figcaption>
+                    <figcaption><div class="entry-title">Rest Api Aggregator</div></figcaption>
                   </figure>
                 </a>
               </div>
               <div class="col-12 col-lg-9 pt-3" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="h5">Rest Api Aggregator <small class="text-secondary small">- Java</small></div>
+                <div class="entry-title">Rest Api Aggregator <small class="text-secondary small">- Java</small></div>
                 <p>Spring boot service with the following functionalities: <br>
                   - Integrate with 3 REST APIs and dynamically combine the responses into 1, depending on the client's requested parameters <br>
                   - Implement request throttling and batching of individual requests, using BlockingQueues. <br>
@@ -226,12 +226,12 @@
               <div class="col-12 col-lg-3 p-0 cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <a href="https://github.com/kougianos/carly" target="_blank">
                   <figure class="my-0"><img src="images/carly.png" alt="Carly" />
-                    <figcaption><div class="h4">Carly Marketplace</div></figcaption>
+                    <figcaption><div class="entry-title">Carly Marketplace</div></figcaption>
                   </figure>
                 </a>
               </div>
               <div class="col-12 col-lg-9 pt-3" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="h5">Carly Marketplace <small class="text-secondary small">- Java</small></div>
+                <div class="entry-title">Carly Marketplace <small class="text-secondary small">- Java</small></div>
                 <p>2 spring boot microservices using Apache Kafka, MongoDB and Role Based Access Control (RBAC)</p>
               </div>
             </div>
@@ -243,14 +243,14 @@
                 <a href="https://grizzledwizard.eu/phonevice" target="_blank">
                   <figure class="my-0"><img src="images/phonevice.png" alt="Phonevice" />
                     <figcaption>
-                      <div class="h4">Phonevice</div>
+                      <div class="entry-title">Phonevice</div>
                       <p>PHP</p>
                     </figcaption>
                   </figure>
                 </a>
               </div>
               <div class="col-12 col-lg-9 pt-3" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="h5">Phonevice <small class="text-secondary small">- PHP</small></div>
+                <div class="entry-title">Phonevice <small class="text-secondary small">- PHP</small></div>
                 <p>This project offers a personalized smartphone recommendation based on 3 simple steps. Budget, features and types of use. An advanced recommendation algorithm takes place under the hood, that will always suggest the top 3 smartphones on the results page.</p>
               </div>
             </div>
@@ -261,12 +261,12 @@
               <div class="col-12 col-lg-3 p-0 cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <a href="https://github.com/kougianos/ds-thesis" target="_blank">
                   <figure class="my-0"><img src="images/ds_thesis.png" alt="Thesis" />
-                    <figcaption><div class="h4">Thesis</div></figcaption>
+                    <figcaption><div class="entry-title">Thesis</div></figcaption>
                   </figure>
                 </a>
               </div>
               <div class="col-12 col-lg-9 pt-3" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="h5">Data Science Thesis <small class="text-secondary small">- Python</small></div>
+                <div class="entry-title">Data Science Thesis <small class="text-secondary small">- Python</small></div>
                 <p>CLI application developed with Python, applying Supervised & Unsupervised ML Algorithms on a predefined dataset containing building energy features. The results from the algorithm executions are persisted on a cloud MongoDB cluster.</p>
                 <p class="my-1 small font-italic">This project was developed in terms of my M.Sc. in Data Science.</p>
               </div>
@@ -278,12 +278,12 @@
               <div class="col-12 col-lg-3 p-0 cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <a href="https://github.com/kougianos/advanced-decision-making" target="_blank">
                   <figure class="my-0"><img src="images/ml.png" alt="AdvancedDecisionMaking" />
-                    <figcaption><div class="h4 mt-5">Advanced Decision Making</div></figcaption>
+                    <figcaption><div class="entry-title mt-5">Advanced Decision Making</div></figcaption>
                   </figure>
                 </a>
               </div>
               <div class="col-12 col-lg-9 pt-3" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="h5">Advanced Decision Making <small class="text-secondary small">- Python</small></div>
+                <div class="entry-title">Advanced Decision Making <small class="text-secondary small">- Python</small></div>
                 <p>Python CLI application that applies Gaussian Naive Bayes and Multiple Linear Regression supervised algorithms and predicting with excellent accuracy student grades based on their social, family and other characteristics.</p>
               </div>
             </div>
@@ -296,7 +296,7 @@
 	<!-- EXPERIENCE -->
     <section class="section pt-0" id="experience">
       <div class="container cc-experience">
-        <div class="h4 mb-4 mt-0 title">Work Experience</div>
+        <div class="section-title mb-4 mt-0">Work Experience</div>
 
         <div class="card">
           <div class="row mx-0">
@@ -305,7 +305,7 @@
             </div>
             <div class="col-12 col-lg-10 pl-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
               <div class="card-body pb-0 pl-3">
-                <div class="h5 mb-0 d-flex justify-content-between"><div>Java Team Lead - Full Time Contract</div><small class="text-secondary small">April 2025 - Present</small></div>
+                <div class="entry-title mb-0 d-flex justify-content-between"><div>Java Team Lead - Full Time Contract</div><small class="text-secondary small">April 2025 - Present</small></div>
                 <p class="mb-1"><strong>Playnetic (Casino Dpt.)</strong> | <i>United Kingdom (Remote)</i></p>
                 <ul class="pl-2 mb-1">
                   <li><strong>Architected high-performance backend services</strong> for casino platform with focus on scalability and reliability across multiple third-party integrations.</li>
@@ -325,7 +325,7 @@
             </div>
             <div class="col-12 col-lg-10 pl-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
               <div class="card-body pb-0 pl-3">
-                <div class="h5 mb-0 d-flex justify-content-between"><div>Senior Software Engineer (Java) - Full Time Contract</div><small class="text-secondary small">August 2022 - April 2025</small></div>
+                <div class="entry-title mb-0 d-flex justify-content-between"><div>Senior Software Engineer (Java) - Full Time Contract</div><small class="text-secondary small">August 2022 - April 2025</small></div>
                 <p class="mb-1"><strong>BVGroup (Gaming/Casino Dpt.)</strong> | <i>Gibraltar (Remote)</i> <br><a class="text-dark" href="https://betvictor.com">https://betvictor.com</a></p>
                 <ul class="pl-2 mb-1">
                   <li><strong>Boosted marketing tool performance by 30%</strong> through optimization and enabled seamless third-party API integrations.</li>
@@ -346,7 +346,7 @@
             </div>
             <div class="col-12 col-lg-10 pl-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
               <div class="card-body pb-0 pl-3">
-                <div class="h5 mb-0 d-flex justify-content-between"><div>Lead Engineer (Java) - 3 Month Contract</div><small class="text-secondary small">July 2024 - September 2024</small></div>
+                <div class="entry-title mb-0 d-flex justify-content-between"><div>Lead Engineer (Java) - 3 Month Contract</div><small class="text-secondary small">July 2024 - September 2024</small></div>
                 <p class="mb-1"><strong>Khantech (Casino & Sportsbook)</strong> | <i>Dubai (Remote)</i></p>
                 <ul class="pl-2 mb-1">
                   <li><strong>Architected core wallet and backend systems</strong> from scratch including transaction/player history, session-based BetSlips, and comprehensive Casino API.</li>
@@ -366,7 +366,7 @@
             </div>
             <div class="col-12 col-lg-10 pl-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
               <div class="card-body pb-0 pl-3">
-                <div class="h5 mb-0 d-flex justify-content-between"><div>Software Engineer (Java) - Full Time</div><small class="text-secondary small">January 2022 - August 2022</small></div>
+                <div class="entry-title mb-0 d-flex justify-content-between"><div>Software Engineer (Java) - Full Time</div><small class="text-secondary small">January 2022 - August 2022</small></div>
                 <p class="mb-1"><strong>Atos</strong> | <i>Athens, Greece (Remote)</i> <br><a class="text-dark" href="https://atos.net">https://atos.net</a></p>
                 <ul class="pl-2 mb-1">
                   <li><strong>Delivered microservices-based Healthcare Interoperability platform</strong> serving multiple healthcare clients with FHIR compliance.</li>
@@ -386,7 +386,7 @@
             </div>
             <div class="col-12 col-lg-10 pl-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
               <div class="card-body pb-0 pl-3">
-                <div class="h5 mb-0 d-flex justify-content-between"><div>Software Engineer (Java) - Full Time</div><small class="text-secondary small">July 2019 - January 2022</small></div>
+                <div class="entry-title mb-0 d-flex justify-content-between"><div>Software Engineer (Java) - Full Time</div><small class="text-secondary small">July 2019 - January 2022</small></div>
                 <p class="mb-1"><strong>Hellenic Telecommunications Organization S.A.</strong> | <i>Athens, Greece</i> <br><a class="text-dark" href="https://cosmote.gr">https://cosmote.gr</a></p>
                 <ul class="pl-2">
                   <li><strong>Built scalable microservices</strong> for internal Communication Hub transmitting 1M+ daily SMS/Email/Push notifications.</li>
@@ -406,7 +406,7 @@
             </div>
             <div class="col-12 col-lg-10 pl-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
               <div class="card-body pb-0 pl-3">
-                <div class="h5 mb-0 d-flex justify-content-between"><div>Lead Engineer (PHP) - Contract</div><small class="text-secondary small">June 2019 - March 2020</small></div>
+                <div class="entry-title mb-0 d-flex justify-content-between"><div>Lead Engineer (PHP) - Contract</div><small class="text-secondary small">June 2019 - March 2020</small></div>
                 <p class="mb-1"><strong>Phonevice</strong> | <i>Athens, Greece (Remote)</i> <br><a class="text-dark" href="https://phonevice.com">https://phonevice.com</a></p>
                 <ul class="pl-2">
                   <li><strong>Built full-stack platform from ground up</strong> with custom recommendation engine and modern UI/UX.</li>
@@ -427,7 +427,7 @@
             </div>
             <div class="col-12 col-lg-10 pl-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
               <div class="card-body pb-0 pl-3">
-                <div class="h5 mb-0 d-flex justify-content-between"><div>Full Stack Engineer (PHP) - Full Time</div><small class="text-secondary small">November 2018 - May 2019</small></div>
+                <div class="entry-title mb-0 d-flex justify-content-between"><div>Full Stack Engineer (PHP) - Full Time</div><small class="text-secondary small">November 2018 - May 2019</small></div>
                 <p class="mb-1"><strong>Figame LTD</strong> | <i>Athens, Greece</i> <br><a class="text-dark" href="https://figame.gr">https://figame.gr</a></p>
                 <ul class="pl-2">
                   <li><strong>Integrated Expedia and Booking.com APIs</strong> delivering new travel services to main site and affiliate network.</li>
@@ -445,7 +445,7 @@
 	<!-- EDUCATION -->
     <section class="section pt-0" id="education">
       <div class="container cc-education">
-        <div class="h4 mb-4 mt-0 title">Education</div>
+        <div class="section-title mb-4 mt-0">Education</div>
         <div class="education-grid">
           <div class="card px-0 education-card">
             <div class="row mx-0">
@@ -454,7 +454,7 @@
               </div>
               <div class="col-12 px-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body pb-0 pl-3">
-                  <div class="h5 mb-0 d-flex justify-content-between">B.Sc. Computer Science<small class="text-secondary small">2011-2018</small></div>
+                  <div class="entry-title mb-0 d-flex justify-content-between">B.Sc. Computer Science<small class="text-secondary small">2011-2018</small></div>
                   <p class="mb-1"><strong>National and Kapodistrian University of Athens</strong> <br> <i>Athens, Greece</i> <br><a class="text-dark" href="https://www.di.uoa.gr">https://www.di.uoa.gr</a></p>
                   <ul class="pl-2">
                     <li class="mt-2">Major courses in field of study:</li>
@@ -480,7 +480,7 @@
               </div>
               <div class="col-12 px-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body pb-0 pl-3">
-                  <div class="h5 mb-0 d-flex justify-content-between">M.Sc. Data Science<small class="text-secondary small">2019-2021</small></div>
+                  <div class="entry-title mb-0 d-flex justify-content-between">M.Sc. Data Science<small class="text-secondary small">2019-2021</small></div>
                   <p class="mb-1"><strong>University of East London</strong> <br> <i>London, UK</i> <br><a class="text-dark" href="https://www.uel.ac.uk">https://www.uel.ac.uk</a></p>
                   <ul class="pl-2">
                     <li class="mt-2">Thesis</li>
@@ -510,7 +510,7 @@
 	<!-- CERTIFICATIONS -->
     <section class="section pt-0" id="certifications">
       <div class="container cc-certifications">
-        <div class="h4 mb-4 title">Certifications</div>
+        <div class="section-title mb-4">Certifications</div>
         <div class="row pt-2 mx-0">
           <div class="col-12 col-lg-6 px-0">
             <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
