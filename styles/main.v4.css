@@ -506,7 +506,8 @@ body.dark-mode a.text-dark {
   color: rgb(230, 18, 18);
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
+
   .theme-toggle-nav-item {
     display: none !important;
   }
@@ -594,15 +595,7 @@ body.dark-mode a.text-dark {
   .vl {
     display: none;
   }
-}
 
-@media (min-width: 992px) {
-  #themeToggleMobile {
-    display: none !important;
-  }
-}
-
-@media (max-width: 768px) {
   [data-aos] {
     transform: none !important;
     transition: none !important;
@@ -620,9 +613,7 @@ body.dark-mode a.text-dark {
   .h5.justify-content-between {
     font-size: 1.17em;
   }
-}
 
-@media (max-width: 576px) {
   .cc-experience .h5.justify-content-between {
     display: block !important;
   }
