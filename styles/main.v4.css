@@ -104,9 +104,12 @@ main,
 
 .card {
   border: 1px solid var(--site-border);
+  border-radius: 14px;
   background-color: var(--site-card-bg);
   color: var(--site-text);
-  transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+  box-shadow: 0 2px 8px 3px #464a4e36;
+  overflow: hidden;
+  transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease, transform 0.35s ease;
 }
 
 .card + .card {
@@ -114,7 +117,7 @@ main,
 }
 
 body.dark-mode .card {
-  box-shadow: 0 12px 24px rgba(1, 8, 18, 0.45);
+  box-shadow: 0 2px 8px 3px #000;
 }
 
 .hero-name,
