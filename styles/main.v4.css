@@ -643,6 +643,10 @@ body.dark-mode a.text-dark {
     display: none !important;
   }
 
+  .cc-project-link {
+    display: none;
+  }
+
   .navbar > .container {
     display: flex;
     align-items: center;
