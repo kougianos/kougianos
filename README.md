@@ -9,10 +9,10 @@
 
 ### Short intro
 
-🎓 **M.Sc. in Data Science** & **B.Sc. in Computer Science**  
-💻 Over **8 years of experience** in software development  
-🎰 Specialized in **iGaming**, **event-driven systems**, and **microservices**  
-☁️ Hands on experience in **Spring Boot, Apache Kafka, WebFlux, MongoDB, Redis, Kubernetes**
+**M.Sc. in Data Science** & **B.Sc. in Computer Science**  
+Over **8 years of experience** in software development  
+Specialized in **iGaming**, **event-driven systems**, and **microservices**  
+Hands on experience in **Spring Boot, Apache Kafka, WebFlux, MongoDB, Redis, Kubernetes**
 
 ---
 
@@ -26,7 +26,7 @@
 
 ---
 
-### 🧰 Tech Stack I've worked with
+### Tech Stack
 
 **Languages:** Java 11–21, Python, PHP  
 **Backend:** Spring Boot, Spring WebFlux, Apache Kafka, REST, GraphQL, Hazelcast  
@@ -37,7 +37,7 @@
 
 ---
 
-### 🚀 Personal Projects
+### Personal Projects
 
 - **Phonevice** – Smartphone recommender platform  
 - **REST Aggregator** – Aggregates API responses with throttling & batching  
