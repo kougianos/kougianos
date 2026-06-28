@@ -16,7 +16,7 @@ Hands on experience in **Spring Boot, Apache Kafka, WebFlux, MongoDB, Redis, Kub
 
 ---
 
-### 🛠 Professional Experience
+### Professional Experience
 
 - Built scalable, reactive microservices handling real-time transactions and user activity.
 - Designed and delivered full-featured wallet systems and promotional platforms for high-load environments in iGaming platforms.
