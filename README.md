@@ -22,7 +22,7 @@ Hands on experience in **Spring Boot, Apache Kafka, WebFlux, MongoDB, Redis, Kub
 - Designed and delivered full-featured wallet systems and promotional platforms for high-load environments in iGaming platforms.
 - Developed custom tools for syncing, comparing, and managing data from third-party APIs in backoffice tools.
 - Led technical design and integration of event-driven systems using Apache Kafka and Redis.
-- Collaborated with cross-functional teams using agile practices, CI/CD pipelines, and cloud-native tools. 
+- Collaborated with cross-functional teams using agile practices, CI/CD pipelines, and cloud-native tools.
 
 ---
 
