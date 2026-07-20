@@ -9,14 +9,14 @@
 
 ### Short intro
 
-🎓 **M.Sc. in Data Science** & **B.Sc. in Computer Science**  
-💻 Over **8 years of experience** in software development  
-🎰 Specialized in **iGaming**, **event-driven systems**, and **microservices**  
-☁️ Hands on experience in **Spring Boot, Apache Kafka, WebFlux, MongoDB, Redis, Kubernetes**
+**M.Sc. in Data Science** & **B.Sc. in Computer Science**  
+Over **8 years of experience** in software development  
+Specialized in **iGaming**, **event-driven systems**, and **microservices**  
+Hands on experience in **Spring Boot, Apache Kafka, WebFlux, MongoDB, Redis, Kubernetes**
 
 ---
 
-### 🛠 Professional Experience
+### Professional Experience
 
 - Built scalable, reactive microservices handling real-time transactions and user activity.
 - Designed and delivered full-featured wallet systems and promotional platforms for high-load environments in iGaming platforms.
@@ -26,7 +26,7 @@
 
 ---
 
-### 🧰 Tech Stack I've worked with
+### Tech Stack
 
 **Languages:** Java 11–21, Python, PHP  
 **Backend:** Spring Boot, Spring WebFlux, Apache Kafka, REST, GraphQL, Hazelcast  
@@ -37,7 +37,7 @@
 
 ---
 
-### 🚀 Personal Projects
+### Personal Projects
 
 - **Phonevice** – Smartphone recommender platform  
 - **REST Aggregator** – Aggregates API responses with throttling & batching  
