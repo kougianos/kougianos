@@ -19,6 +19,9 @@
   --site-toggle-bg: rgba(255, 255, 255, 0.18);
   --site-toggle-fg: #ffffff;
   --site-toggle-border: rgba(255, 255, 255, 0.25);
+  --site-toggle-knob: #ffffff;
+  --site-toggle-icon-on: #1c2a4f;
+  --site-toggle-icon-off: rgba(255, 255, 255, 0.6);
   --hero-bg-1: #edf2fb;
   --hero-bg-2: #eaf1ff;
   --hero-grid: rgba(33, 66, 108, 0.18);
@@ -50,6 +53,9 @@ body.dark-mode {
   --site-toggle-bg: rgba(41, 59, 85, 0.9);
   --site-toggle-fg: #f6d674;
   --site-toggle-border: rgba(246, 214, 116, 0.35);
+  --site-toggle-knob: #0d1420;
+  --site-toggle-icon-on: #f6d674;
+  --site-toggle-icon-off: rgba(231, 237, 248, 0.42);
   --hero-bg-1: #151f2e;
   --hero-bg-2: #111a29;
   --hero-grid: rgba(126, 149, 186, 0.34);
@@ -197,64 +203,80 @@ body.dark-mode .card {
 }
 
 .theme-toggle-btn {
-  width: 38px;
-  height: 38px;
+  position: relative;
+  width: 68px;
+  height: 34px;
+  padding: 3px;
   border: 1px solid var(--site-toggle-border);
   border-radius: 999px;
   background: var(--site-toggle-bg);
   color: var(--site-toggle-fg);
   display: inline-flex;
   align-items: center;
-  justify-content: center;
   cursor: pointer;
-  padding: 0;
-  transition: transform 0.2s ease, background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  transition: background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .theme-toggle-btn:focus-visible {
-  transform: translateY(-1px);
-  background: rgba(255, 255, 255, 0.24);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.22);
 }
 
 @media (hover: hover) {
-  .theme-toggle-btn:hover {
-    transform: translateY(-1px);
-    background: rgba(255, 255, 255, 0.24);
+  .theme-toggle-btn:hover .theme-toggle-knob {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.34);
   }
+}
+
+/* Sliding knob sits under the icons and moves to the active side */
+.theme-toggle-knob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  z-index: 0;
+  width: 30px;
+  height: 26px;
+  border-radius: 999px;
+  background: var(--site-toggle-knob);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.26);
+  transition: transform 0.22s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+body.dark-mode .theme-toggle-knob {
+  transform: translateX(30px);
 }
 
 .theme-toggle-icon {
   position: relative;
-  width: 18px;
-  height: 18px;
+  z-index: 1;
+  flex: 1 1 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  font-size: 15px;
+  line-height: 1;
+  transition: color 0.25s ease;
 }
 
-.theme-toggle-icon i {
-  position: absolute;
-  transition: opacity 0.25s ease, transform 0.25s ease;
+.theme-icon-sun {
+  color: var(--site-toggle-icon-on);
 }
 
-.theme-toggle-icon .theme-icon-moon {
-  opacity: 1;
-  transform: rotate(0deg) scale(1);
+.theme-icon-moon {
+  color: var(--site-toggle-icon-off);
 }
 
-.theme-toggle-icon .theme-icon-sun {
-  opacity: 0;
-  transform: rotate(-35deg) scale(0.55);
+body.dark-mode .theme-icon-sun {
+  color: var(--site-toggle-icon-off);
 }
 
-body.dark-mode .theme-toggle-icon .theme-icon-moon {
-  opacity: 0;
-  transform: rotate(35deg) scale(0.55);
+body.dark-mode .theme-icon-moon {
+  color: var(--site-toggle-icon-on);
 }
 
-body.dark-mode .theme-toggle-icon .theme-icon-sun {
-  opacity: 1;
-  transform: rotate(0deg) scale(1);
+@media (prefers-reduced-motion: reduce) {
+  .theme-toggle-knob {
+    transition: background-color 0.25s ease;
+  }
 }
 
 .scroll-progress {

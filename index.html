@@ -49,12 +49,11 @@
       <div class="container">
         <div class="navbar-translate d-flex align-items-center w-100">
           <a class="navbar-brand" href="#top" rel="tooltip">GRIZZLED WIZARD</a>
-          <button id="themeToggleMobile" class="theme-toggle-btn d-lg-none ml-auto mr-2" type="button"
-            aria-label="Activate dark mode" aria-pressed="false" title="Activate dark mode">
-            <span class="theme-toggle-icon" aria-hidden="true">
-              <i class="fa fa-moon-o theme-icon-moon"></i>
-              <i class="fa fa-sun-o theme-icon-sun"></i>
-            </span>
+          <button id="themeToggleMobile" class="theme-toggle-btn d-lg-none ml-auto mr-2" type="button" role="switch"
+            aria-label="Activate dark mode" aria-checked="false" title="Activate dark mode">
+            <span class="theme-toggle-knob" aria-hidden="true"></span>
+            <span class="theme-toggle-icon theme-icon-sun" aria-hidden="true"><i class="fa fa-sun-o"></i></span>
+            <span class="theme-toggle-icon theme-icon-moon" aria-hidden="true"><i class="fa fa-moon-o"></i></span>
           </button>
           <button id="navbarTogglerButton" class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,12 +71,11 @@
             <li class="nav-item mobile-app-nav-item"><a class="nav-link smooth-scroll" href="#education">Education</a></li>
             <li class="nav-item mobile-hide-nav-item"><a class="nav-link smooth-scroll" href="#certifications">Certifications</a></li>
             <li class="nav-item theme-toggle-nav-item d-none d-lg-flex align-items-center">
-              <button id="themeToggleDesktop" class="theme-toggle-btn" type="button"
-                aria-label="Activate dark mode" aria-pressed="false" title="Activate dark mode">
-                <span class="theme-toggle-icon" aria-hidden="true">
-                  <i class="fa fa-moon-o theme-icon-moon"></i>
-                  <i class="fa fa-sun-o theme-icon-sun"></i>
-                </span>
+              <button id="themeToggleDesktop" class="theme-toggle-btn" type="button" role="switch"
+                aria-label="Activate dark mode" aria-checked="false" title="Activate dark mode">
+                <span class="theme-toggle-knob" aria-hidden="true"></span>
+                <span class="theme-toggle-icon theme-icon-sun" aria-hidden="true"><i class="fa fa-sun-o"></i></span>
+                <span class="theme-toggle-icon theme-icon-moon" aria-hidden="true"><i class="fa fa-moon-o"></i></span>
               </button>
             </li>
           </ul>

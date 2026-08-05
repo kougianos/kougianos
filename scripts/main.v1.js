@@ -6,7 +6,7 @@ $(document).ready(function () {
 	function updateThemeButtons(theme) {
 		themeToggleButtons.forEach((button) => {
 			const isDark = theme === "dark";
-			button.setAttribute("aria-pressed", isDark.toString());
+			button.setAttribute("aria-checked", isDark.toString());
 			button.setAttribute("aria-label", isDark ? "Activate light mode" : "Activate dark mode");
 			button.setAttribute("title", isDark ? "Activate light mode" : "Activate dark mode");
 		});
