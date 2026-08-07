@@ -1,0 +1,72 @@
+# Everything is open: traditional search engines and the official AI crawlers.
+#
+# The AI bots below are listed explicitly rather than relying on the wildcard.
+# They were previously all disallowed, so naming them makes the change
+# deliberate and stops a managed/default robots.txt from quietly re-blocking
+# them. Each one is a documented, publisher-verifiable crawler with published
+# IP ranges or reverse-DNS.
+
+User-agent: *
+Content-Signal: search=yes,ai-train=yes,use=reference
+Allow: /
+
+# --- OpenAI ---------------------------------------------------------------
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# --- Anthropic ------------------------------------------------------------
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# --- Google (Gemini / AI grounding; plain Googlebot is covered by *) -------
+User-agent: Google-Extended
+Allow: /
+
+# --- Apple (Apple Intelligence; plain Applebot is covered by *) -----------
+User-agent: Applebot-Extended
+Allow: /
+
+# --- Perplexity -----------------------------------------------------------
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# --- Meta -----------------------------------------------------------------
+User-agent: meta-externalagent
+Allow: /
+
+# --- Amazon ---------------------------------------------------------------
+User-agent: Amazonbot
+Allow: /
+
+# --- Common Crawl (feeds many open datasets) ------------------------------
+User-agent: CCBot
+Allow: /
+
+# --- Cloudflare -----------------------------------------------------------
+User-agent: CloudflareBrowserRenderingCrawler
+Allow: /
+
+# --- ByteDance ------------------------------------------------------------
+# Left blocked: Bytespider is widely reported to ignore robots.txt and to crawl
+# aggressively, so it does not meet the "well-behaved and verifiable" bar the
+# rest of this list does. Note this line only deters a crawler that chooses to
+# obey it; genuine enforcement belongs in Cloudflare's bot rules, not here.
+User-agent: Bytespider
+Disallow: /
+
+Sitemap: https://kougianos.com/sitemap.xml

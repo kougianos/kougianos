@@ -129,12 +129,17 @@ body.dark-mode .card {
 .hero-name,
 .section-title,
 .entry-title {
+  margin-top: 0;
   margin-bottom: 0.5rem;
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
   font-size: 1.5rem;
+}
+
+.entry-title-line {
+  display: block;
 }
 
 .cc-project-link {
