@@ -7,7 +7,7 @@
 
 ---
 
-### Short intro
+### Short intro 
 
 **M.Sc. in Data Science** & **B.Sc. in Computer Science**  
 Over **8 years of experience** in software development  
